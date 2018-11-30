@@ -1,0 +1,3 @@
+CREATE VIEW divaOrganisation as select CAST(o.organisation_id as varchar) as id, o.organisation_name as defaultname, o.organisation_code, o.not_eligible, ot.organisation_type_code as type_code, alt.organisation_name as alternative_name 
+from organisation o left join organisation_type ot on o.organisation_type_id = ot.organisation_type_id left join organisation_name alt 
+on o.organisation_id = alt.organisation_id; 
