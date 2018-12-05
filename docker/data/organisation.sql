@@ -611,8 +611,8 @@ ALTER TABLE ONLY public.organisation_name
 -- Name: organisation_address fkc1c0c98fee9dab3d; Type: FK CONSTRAINT; Schema: public; Owner: diva
 --
 
-ALTER TABLE ONLY public.organisation_address
-    ADD CONSTRAINT fkc1c0c98fee9dab3d FOREIGN KEY (country_code) REFERENCES public.country(country_code);
+-- ALTER TABLE ONLY public.organisation_address
+--    ADD CONSTRAINT fkc1c0c98fee9dab3d FOREIGN KEY (country_code) REFERENCES public.country(country_code);
 
 
 --
@@ -650,4 +650,5 @@ ALTER TABLE ONLY public.organisation_parent
 --
 -- PostgreSQL database dump complete
 --
+
 
