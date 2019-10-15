@@ -5,7 +5,7 @@ USER root
 RUN mkdir data
 COPY data/* data/
 COPY initdb/*.sh docker-entrypoint-initdb.d/
-RUN chmod +x docker-entrypoint-initdb.d/*.sh && chown -R postgres: data
+RUN chmod +rx docker-entrypoint-initdb.d/*.sh && chown -R postgres: data
 
 USER postgres
 
