@@ -389,6 +389,7 @@ COPY public.organisation_predecessor_description (organisation_predecessor_id, l
 --
 
 COPY public.organisation_type (organisation_type_id, last_updated, organisation_type_code) FROM stdin;
+49	2009-07-29 00:00:00	root
 50	2009-03-18 15:59:50.629	university
 51	2009-03-18 15:59:50.645	school
 52	2009-03-18 15:59:50.666	faculty
@@ -400,6 +401,10 @@ COPY public.organisation_type (organisation_type_id, last_updated, organisation_
 58	2009-03-18 15:59:50.738	researchGroup
 59	2009-03-18 15:59:50.75	researchProgram
 60	2009-03-18 15:59:50.762	researchProject
+61	2009-03-02 00:00:00	division
+62	2013-03-26 00:00:00	museum
+63	2013-03-26 00:00:00	researchInstitute
+64	2013-03-26 00:00:00	authority
 65	2016-02-24 11:31:19.97021	company
 66	2016-02-24 11:31:19.97021	other
 \.
@@ -432,6 +437,16 @@ COPY public.organisation_type_name (organisation_type_name_id, last_updated, loc
 1919	2009-03-18 15:59:50.75	en	Research Program	59
 1920	2009-03-18 15:59:50.762	sv	Forskningprojekt	60
 1921	2009-03-18 15:59:50.762	en	Research Project	60
+1922	2009-03-02 00:00:00	sv	Avdelning	61
+1923	2009-03-02 00:00:00	en	Division	61
+1924	2009-07-29 00:00:00	sv	Rotorganisation	49
+1925	2009-07-29 00:00:00	en	Root organisation	49
+1926	2013-03-26 00:00:00	sv	Museum	62
+1927	2013-03-26 00:00:00	en	Museum	62
+1928	2013-03-26 00:00:00	sv	Forskningsinstitut	63
+1929	2013-03-26 00:00:00	en	Research Institute	63
+1930	2013-03-26 00:00:00	sv	Myndighet	64
+1931	2013-03-26 00:00:00	en	Authority	64
 1932	2016-02-24 11:31:19.97021	sv	Företag	65
 1933	2016-02-24 11:31:19.97021	en	Company	65
 1934	2016-02-24 11:31:19.97021	sv	Övrigt	66
