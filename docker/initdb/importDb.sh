@@ -3,7 +3,7 @@ set -e
 
 
 #TABLES="organisation organisation_name organisation_address organisation_contact organisation_parent organisation_predecessor organisation_predecessor_description organisation_type organisation_type_name"
-TABLES="select organisation organisationView"
+TABLES="select organisation organisationView user"
 
 for TABLE in $TABLES
 do
