@@ -1,4 +1,4 @@
-CREATE VIEW public.divaOrganisation as select CAST(o.organisation_id as varchar) as id, o.organisation_name as defaultname, o.closed_date, o.organisation_code, o.orgnumber, o.organisation_homepage, o.not_eligible, ot.organisation_type_code as type_code, alt.organisation_name as alternative_name,
+CREATE VIEW public.divaOrganisation as select CAST(o.organisation_id as varchar) as id, o.domain, o.organisation_name as defaultname, o.closed_date, o.organisation_code, o.orgnumber, o.organisation_homepage, o.not_eligible, ot.organisation_type_code as type_code, alt.organisation_name as alternative_name,
 a.city, a.street, a.postbox, a.postnumber, a.country_code from public.organisation o left join organisation_type ot on o.organisation_type_id = ot.organisation_type_id left join organisation_name alt 
 on o.organisation_id = alt.organisation_id left join organisation_address a on o.address_id = a.address_id; 
 
