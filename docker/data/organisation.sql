@@ -662,34 +662,6 @@ ALTER TABLE ONLY public.organisation_parent
     ADD CONSTRAINT fkee283bafd2890a17 FOREIGN KEY (organisation_id) REFERENCES public.organisation(organisation_id);
 
 --
--- Name: name_sequence; Type: SEQUENCE; Schema: public; Owner: diva
---
-
-CREATE SEQUENCE name_sequence
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
-ALTER TABLE name_sequence OWNER TO diva;
-
- --
--- Name: organisation_predecessor_description_sequence; Type: SEQUENCE; Schema: public; Owner: diva
---
-
-CREATE SEQUENCE organisation_predecessor_description_sequence
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
-ALTER TABLE organisation_predecessor_description_sequence OWNER TO diva;
-
---
 -- PostgreSQL database dump complete
 --
 
