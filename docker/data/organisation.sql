@@ -218,6 +218,7 @@ COPY public.organisation (organisation_id, last_updated, domain, closed_date, ol
 1400	2013-03-06 11:34:19.71	nrm	\N	\N	\N	NRM	sv	\N	\N	\N	http://www.nrm.se	\N	50	f	t	t	f	2222222222222
 1450	2013-09-16 16:13:46.552	norden	\N	\N	\N	Nordiska ministerrådet	sv	\N	\N	\N	http://www.norden.org	\N	50	f	t	t	f	3333333333
 1451	2013-09-16 16:15:27.408	nationalmuseum	\N	\N	\N	Nationalmuseum	sv	\N	\N	\N	http://www.nationalmuseum.se/	\N	50	f	t	t	f	44444444
+1452	2013-09-16 16:15:27.408	test	\N	\N	\N	Organisation som saknar alternativt namn	sv	\N	\N	\N	http://org.utan.alternativ/	\N	50	f	t	t	f	44444444
 \.
 
 
