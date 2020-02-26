@@ -1,0 +1,788 @@
+
+--
+-- Name: country; Type: TABLE; Schema: public; Owner: diva
+--
+
+CREATE TABLE public.country (
+    country_code character varying(2) NOT NULL,
+    last_updated timestamp without time zone,
+    show_on_list boolean NOT NULL
+);
+
+
+ALTER TABLE country OWNER TO diva;
+
+--
+-- Name: country_name; Type: TABLE; Schema: public; Owner: diva
+--
+
+CREATE TABLE public.country_name (
+    country_name_id integer NOT NULL,
+    last_updated timestamp without time zone,
+    locale character varying(255),
+    country_name character varying(255) NOT NULL,
+    country_code character varying(2)
+);
+
+
+ALTER TABLE country_name OWNER TO diva;
+
+
+
+--
+-- Data for Name: country; Type: TABLE DATA; Schema: public; Owner: diva
+--
+
+COPY country (country_code, last_updated, show_on_list) FROM stdin;
+ad	2009-03-18 15:59:40.556	f
+ae	2009-03-18 15:59:40.573	f
+af	2009-03-18 15:59:40.593	f
+ag	2009-03-18 15:59:40.608	f
+ai	2009-03-18 15:59:40.62	f
+al	2009-03-18 15:59:40.632	f
+am	2009-03-18 15:59:40.646	f
+an	2009-03-18 15:59:40.662	f
+ao	2009-03-18 15:59:40.674	f
+aq	2009-03-18 15:59:40.693	f
+ar	2009-03-18 15:59:40.703	f
+as	2009-03-18 15:59:40.718	f
+at	2009-03-18 15:59:40.733	t
+au	2009-03-18 15:59:40.745	t
+aw	2009-03-18 15:59:40.757	f
+az	2009-03-18 15:59:40.771	f
+ba	2009-03-18 15:59:40.788	f
+bb	2009-03-18 15:59:40.8	f
+bd	2009-03-18 15:59:40.821	f
+be	2009-03-18 15:59:40.835	t
+bf	2009-03-18 15:59:40.847	f
+bg	2009-03-18 15:59:40.859	f
+bh	2009-03-18 15:59:40.872	f
+bi	2009-03-18 15:59:40.89	f
+bj	2009-03-18 15:59:40.923	f
+bm	2009-03-18 15:59:40.941	f
+bn	2009-03-18 15:59:40.955	f
+bo	2009-03-18 15:59:40.967	f
+br	2009-03-18 15:59:40.979	t
+bs	2009-03-18 15:59:40.991	f
+bt	2009-03-18 15:59:41.006	f
+bw	2009-03-18 15:59:41.076	f
+bv	2009-03-18 15:59:41.094	f
+by	2009-03-18 15:59:41.105	t
+bz	2009-03-18 15:59:41.117	f
+ca	2009-03-18 15:59:41.129	t
+cc	2009-03-18 15:59:41.151	f
+cd	2009-03-18 15:59:41.165	f
+cf	2009-03-18 15:59:41.177	f
+cg	2009-03-18 15:59:41.189	f
+ch	2009-03-18 15:59:41.201	t
+ci	2009-03-18 15:59:41.213	f
+ck	2009-03-18 15:59:41.225	f
+cl	2009-03-18 15:59:41.237	t
+cm	2009-03-18 15:59:41.249	f
+cn	2009-03-18 15:59:41.261	t
+co	2009-03-18 15:59:41.273	f
+cr	2009-03-18 15:59:41.286	f
+cu	2009-03-18 15:59:41.298	f
+cv	2009-03-18 15:59:41.314	f
+cx	2009-03-18 15:59:41.327	f
+cy	2009-03-18 15:59:41.344	f
+cz	2009-03-18 15:59:41.357	t
+de	2009-03-18 15:59:41.369	t
+dj	2009-03-18 15:59:41.381	f
+dk	2009-03-18 15:59:41.393	t
+dm	2009-03-18 15:59:41.405	f
+do	2009-03-18 15:59:41.417	f
+dz	2009-03-18 15:59:41.429	f
+ec	2009-03-18 15:59:41.447	f
+ee	2009-03-18 15:59:41.459	f
+eg	2009-03-18 15:59:41.471	f
+eh	2009-03-18 15:59:41.483	f
+er	2009-03-18 15:59:41.495	f
+es	2009-03-18 15:59:41.507	t
+et	2009-03-18 15:59:41.519	f
+fi	2009-03-18 15:59:41.531	t
+fj	2009-03-18 15:59:41.557	f
+fk	2009-03-18 15:59:41.572	f
+fm	2009-03-18 15:59:41.586	f
+fo	2009-03-18 15:59:41.597	f
+fr	2009-03-18 15:59:41.609	t
+ga	2009-03-18 15:59:41.621	f
+gb	2009-03-18 15:59:41.633	t
+gd	2009-03-18 15:59:41.645	f
+ge	2009-03-18 15:59:41.657	f
+gf	2009-03-18 15:59:41.669	f
+gh	2009-03-18 15:59:41.681	f
+gi	2009-03-18 15:59:41.693	f
+gl	2009-03-18 15:59:41.711	f
+gm	2009-03-18 15:59:41.723	f
+gn	2009-03-18 15:59:41.735	f
+gp	2009-03-18 15:59:41.747	f
+gq	2009-03-18 15:59:41.759	f
+gr	2009-03-18 15:59:41.771	t
+gs	2009-03-18 15:59:41.802	f
+gt	2009-03-18 15:59:41.823	f
+gu	2009-03-18 15:59:41.853	f
+gw	2009-03-18 15:59:41.873	f
+gy	2009-03-18 15:59:41.885	f
+hk	2009-03-18 15:59:41.897	f
+hm	2009-03-18 15:59:41.908	f
+hn	2009-03-18 15:59:41.921	f
+hr	2009-03-18 15:59:41.933	t
+ht	2009-03-18 15:59:41.945	f
+hu	2009-03-18 15:59:41.96	t
+id	2009-03-18 15:59:41.972	f
+ie	2009-03-18 15:59:41.987	t
+il	2009-03-18 15:59:41.999	t
+in	2009-03-18 15:59:42.063	t
+io	2009-03-18 15:59:42.083	f
+iq	2009-03-18 15:59:42.099	t
+ir	2009-03-18 15:59:42.113	t
+is	2009-03-18 15:59:42.129	t
+it	2009-03-18 15:59:42.143	t
+jm	2009-03-18 15:59:42.156	f
+jo	2009-03-18 15:59:42.171	f
+jp	2009-03-18 15:59:42.186	f
+ke	2009-03-18 15:59:42.203	f
+kg	2009-03-18 15:59:42.218	f
+kh	2009-03-18 15:59:42.233	f
+ki	2009-03-18 15:59:42.245	f
+km	2009-03-18 15:59:42.257	f
+kn	2009-03-18 15:59:42.27	f
+kp	2009-03-18 15:59:42.285	f
+kr	2009-03-18 15:59:42.299	f
+kw	2009-03-18 15:59:42.311	f
+ky	2009-03-18 15:59:42.326	f
+kz	2009-03-18 15:59:42.341	f
+la	2009-03-18 15:59:42.357	f
+lb	2009-03-18 15:59:42.371	f
+lc	2009-03-18 15:59:42.388	f
+li	2009-03-18 15:59:42.401	f
+lk	2009-03-18 15:59:42.417	f
+lr	2009-03-18 15:59:42.431	f
+ls	2009-03-18 15:59:42.443	f
+lt	2009-03-18 15:59:42.483	t
+lu	2009-03-18 15:59:42.498	t
+lv	2009-03-18 15:59:42.512	t
+ly	2009-03-18 15:59:42.524	f
+ma	2009-03-18 15:59:42.541	f
+mc	2009-03-18 15:59:42.554	f
+md	2009-03-18 15:59:42.569	f
+mg	2009-03-18 15:59:42.588	f
+mh	2009-03-18 15:59:42.603	f
+mk	2009-03-18 15:59:42.618	t
+ml	2009-03-18 15:59:42.631	f
+mm	2009-03-18 15:59:42.643	f
+mn	2009-03-18 15:59:42.655	f
+mo	2009-03-18 15:59:42.667	f
+mp	2009-03-18 15:59:42.679	f
+mq	2009-03-18 15:59:42.691	f
+mr	2009-03-18 15:59:42.703	f
+ms	2009-03-18 15:59:42.715	f
+mt	2009-03-18 15:59:42.727	t
+mu	2009-03-18 15:59:42.74	f
+mw	2009-03-18 15:59:42.755	f
+mv	2009-03-18 15:59:42.769	f
+mx	2009-03-18 15:59:42.781	t
+my	2009-03-18 15:59:42.795	f
+mz	2009-03-18 15:59:42.812	f
+na	2009-03-18 15:59:42.826	f
+nc	2009-03-18 15:59:42.857	f
+ne	2009-03-18 15:59:42.871	f
+nf	2009-03-18 15:59:42.883	f
+ng	2009-03-18 15:59:42.894	f
+ni	2009-03-18 15:59:42.906	f
+nl	2009-03-18 15:59:42.922	f
+pe	2009-03-18 15:59:43.068	f
+pr	2009-03-18 15:59:43.186	f
+ru	2009-03-18 15:59:43.296	t
+sh	2009-03-18 15:59:43.403	f
+sr	2009-03-18 15:59:43.506	f
+tg	2009-03-18 15:59:43.607	f
+tr	2009-03-18 15:59:43.703	f
+us	2009-03-18 15:59:43.806	t
+vi	2009-03-18 15:59:43.902	f
+zm	2009-03-18 15:59:44.045	f
+no	2009-03-18 15:59:42.935	t
+pf	2009-03-18 15:59:43.085	f
+ps	2009-03-18 15:59:43.198	f
+rw	2009-03-18 15:59:43.308	f
+si	2009-03-18 15:59:43.416	t
+st	2009-03-18 15:59:43.518	f
+th	2009-03-18 15:59:43.62	f
+tt	2009-03-18 15:59:43.715	f
+uy	2009-03-18 15:59:43.817	f
+vn	2009-03-18 15:59:43.913	f
+zw	2009-03-18 15:59:44.063	f
+np	2009-03-18 15:59:42.949	f
+pg	2009-03-18 15:59:43.099	f
+pt	2009-03-18 15:59:43.212	t
+sa	2009-03-18 15:59:43.321	t
+sj	2009-03-18 15:59:43.428	f
+sv	2009-03-18 15:59:43.531	f
+tj	2009-03-18 15:59:43.631	f
+tv	2009-03-18 15:59:43.73	f
+uz	2009-03-18 15:59:43.829	f
+ws	2009-03-18 15:59:43.925	f
+nr	2009-03-18 15:59:42.961	f
+ph	2009-03-18 15:59:43.117	f
+pw	2009-03-18 15:59:43.224	f
+sb	2009-03-18 15:59:43.332	f
+sk	2009-03-18 15:59:43.44	t
+sy	2009-03-18 15:59:43.546	f
+tk	2009-03-18 15:59:43.644	f
+tw	2009-03-18 15:59:43.743	f
+va	2009-03-18 15:59:43.841	f
+vu	2009-03-18 15:59:43.938	f
+nu	2009-03-18 15:59:42.973	f
+pk	2009-03-18 15:59:43.128	f
+py	2009-03-18 15:59:43.238	f
+sc	2009-03-18 15:59:43.344	f
+sl	2009-03-18 15:59:43.452	f
+sz	2009-03-18 15:59:43.56	f
+tm	2009-03-18 15:59:43.655	f
+tz	2009-03-18 15:59:43.757	f
+vc	2009-03-18 15:59:43.854	f
+ye	2009-03-18 15:59:43.95	f
+nz	2009-03-18 15:59:42.985	t
+pl	2009-03-18 15:59:43.14	t
+qa	2009-03-18 15:59:43.258	f
+sd	2009-03-18 15:59:43.356	f
+sm	2009-03-18 15:59:43.464	f
+tc	2009-03-18 15:59:43.572	f
+tn	2009-03-18 15:59:43.667	f
+ua	2009-03-18 15:59:43.769	t
+ve	2009-03-18 15:59:43.866	f
+yt	2009-03-18 15:59:43.962	f
+om	2009-03-18 15:59:42.997	f
+pm	2009-03-18 15:59:43.158	f
+re	2009-03-18 15:59:43.272	f
+se	2009-03-18 15:59:43.368	t
+sn	2009-03-18 15:59:43.476	f
+td	2009-03-18 15:59:43.583	f
+to	2009-03-18 15:59:43.679	f
+ug	2009-03-18 15:59:43.781	f
+wf	2009-03-18 15:59:43.878	f
+yu	2009-03-18 15:59:43.975	f
+pa	2009-03-18 15:59:43.051	f
+pn	2009-03-18 15:59:43.17	f
+ro	2009-03-18 15:59:43.284	t
+sg	2009-03-18 15:59:43.386	t
+so	2009-03-18 15:59:43.491	f
+tf	2009-03-18 15:59:43.596	f
+tp	2009-03-18 15:59:43.691	f
+um	2009-03-18 15:59:43.793	f
+vg	2009-03-18 15:59:43.89	f
+za	2009-03-18 15:59:43.991	t
+\.
+
+
+--
+-- Data for Name: country_name; Type: TABLE DATA; Schema: public; Owner: diva
+--
+
+COPY country_name (country_name_id, last_updated, locale, country_name, country_code) FROM stdin;
+400	2009-03-18 15:59:40.557	sv	Andorra	ad
+401	2009-03-18 15:59:40.557	en	Andorra	ad
+402	2009-03-18 15:59:40.573	sv	Förenade Arabemiraten	ae
+403	2009-03-18 15:59:40.573	en	United Arab Emirates	ae
+404	2009-03-18 15:59:40.593	en	Afghanistan	af
+405	2009-03-18 15:59:40.594	sv	Afghanistan	af
+406	2009-03-18 15:59:40.608	sv	Antigua och Barbuda	ag
+407	2009-03-18 15:59:40.608	en	Antigua And Barbuda	ag
+408	2009-03-18 15:59:40.62	en	Anguilla	ai
+409	2009-03-18 15:59:40.62	sv	Anguilla	ai
+410	2009-03-18 15:59:40.632	sv	Albanien	al
+411	2009-03-18 15:59:40.632	en	Albania	al
+412	2009-03-18 15:59:40.646	sv	Armenien	am
+413	2009-03-18 15:59:40.646	en	Armenia	am
+414	2009-03-18 15:59:40.662	en	Netherlands Antilles	an
+415	2009-03-18 15:59:40.662	sv	Netherlands Antilles	an
+416	2009-03-18 15:59:40.674	en	Angola	ao
+417	2009-03-18 15:59:40.675	sv	Angola	ao
+418	2009-03-18 15:59:40.693	sv	Antarctica	aq
+419	2009-03-18 15:59:40.693	en	Antarctica	aq
+420	2009-03-18 15:59:40.703	en	Argentina	ar
+421	2009-03-18 15:59:40.704	sv	Argentina	ar
+422	2009-03-18 15:59:40.718	sv	American Samoa	as
+423	2009-03-18 15:59:40.718	en	American Samoa	as
+424	2009-03-18 15:59:40.733	en	Austria	at
+425	2009-03-18 15:59:40.733	sv	Austria	at
+426	2009-03-18 15:59:40.745	en	Australia	au
+427	2009-03-18 15:59:40.745	sv	Australien	au
+428	2009-03-18 15:59:40.757	sv	Aruba	aw
+429	2009-03-18 15:59:40.757	en	Aruba	aw
+430	2009-03-18 15:59:40.771	en	Azerbaijan	az
+431	2009-03-18 15:59:40.771	sv	Azerbajdzjan	az
+432	2009-03-18 15:59:40.788	sv	Bosnien och Hercegovina	ba
+433	2009-03-18 15:59:40.788	en	Bosnia And Herzegovina	ba
+434	2009-03-18 15:59:40.8	sv	Barbados	bb
+435	2009-03-18 15:59:40.8	en	Barbados	bb
+436	2009-03-18 15:59:40.821	sv	Bangladesh	bd
+437	2009-03-18 15:59:40.821	en	Bangladesh	bd
+438	2009-03-18 15:59:40.836	en	Belgium	be
+439	2009-03-18 15:59:40.836	sv	Belgium	be
+440	2009-03-18 15:59:40.848	en	Burkina Faso	bf
+441	2009-03-18 15:59:40.848	sv	Burkina Faso	bf
+442	2009-03-18 15:59:40.859	sv	Bulgarien	bg
+443	2009-03-18 15:59:40.859	en	Bulgaria	bg
+444	2009-03-18 15:59:40.872	sv	Bahrain	bh
+445	2009-03-18 15:59:40.872	en	Bahrain	bh
+446	2009-03-18 15:59:40.89	sv	Burundi	bi
+447	2009-03-18 15:59:40.89	en	Burundi	bi
+448	2009-03-18 15:59:40.923	en	Benin	bj
+449	2009-03-18 15:59:40.923	sv	Benin	bj
+450	2009-03-18 15:59:40.942	sv	Bermuda	bm
+451	2009-03-18 15:59:40.942	en	Bermuda	bm
+452	2009-03-18 15:59:40.955	en	Brunei Darussalam	bn
+453	2009-03-18 15:59:40.956	sv	Brunei	bn
+454	2009-03-18 15:59:40.967	sv	Bolivia	bo
+455	2009-03-18 15:59:40.967	en	Bolivia	bo
+456	2009-03-18 15:59:40.979	en	Brazil	br
+457	2009-03-18 15:59:40.979	sv	Brasilien	br
+458	2009-03-18 15:59:40.991	sv	Bahamas	bs
+459	2009-03-18 15:59:40.991	en	Bahamas	bs
+460	2009-03-18 15:59:41.007	en	Bhutan	bt
+461	2009-03-18 15:59:41.007	sv	Bhutan	bt
+462	2009-03-18 15:59:41.076	en	Botswana	bw
+463	2009-03-18 15:59:41.076	sv	Botswana	bw
+464	2009-03-18 15:59:41.094	sv	Bouvet Island	bv
+465	2009-03-18 15:59:41.094	en	Bouvet Island	bv
+466	2009-03-18 15:59:41.105	sv	Vitryssland	by
+467	2009-03-18 15:59:41.105	en	Belarus	by
+468	2009-03-18 15:59:41.117	sv	Belize	bz
+469	2009-03-18 15:59:41.117	en	Belize	bz
+470	2009-03-18 15:59:41.129	sv	Kanada	ca
+471	2009-03-18 15:59:41.13	en	Canada	ca
+472	2009-03-18 15:59:41.151	en	Cocos (Keeling) Islands	cc
+473	2009-03-18 15:59:41.151	sv	Cocos (Keeling) Islands	cc
+474	2009-03-18 15:59:41.166	sv	Demokratiska republiken Kongo	cd
+475	2009-03-18 15:59:41.166	en	Congo, The Democratic Republic Of The	cd
+476	2009-03-18 15:59:41.177	en	Central African Republic	cf
+477	2009-03-18 15:59:41.177	sv	Centralafrikanska republiken	cf
+478	2009-03-18 15:59:41.189	sv	Kongo	cg
+479	2009-03-18 15:59:41.189	en	Congo	cg
+480	2009-03-18 15:59:41.201	en	Switzerland	ch
+481	2009-03-18 15:59:41.201	sv	Schweiz	ch
+482	2009-03-18 15:59:41.213	sv	Elfenbenskusten	ci
+483	2009-03-18 15:59:41.213	en	Côte DIvoire	ci
+484	2009-03-18 15:59:41.225	sv	Cook Islands	ck
+485	2009-03-18 15:59:41.225	en	Cook Islands	ck
+486	2009-03-18 15:59:41.237	sv	Chile	cl
+487	2009-03-18 15:59:41.237	en	Chile	cl
+488	2009-03-18 15:59:41.249	sv	Kamerun	cm
+489	2009-03-18 15:59:41.249	en	Cameroon	cm
+490	2009-03-18 15:59:41.261	en	China	cn
+491	2009-03-18 15:59:41.261	sv	Kina	cn
+492	2009-03-18 15:59:41.273	en	Colombia	co
+493	2009-03-18 15:59:41.273	sv	Colombia	co
+494	2009-03-18 15:59:41.286	sv	Costa Rica	cr
+495	2009-03-18 15:59:41.286	en	Costa Rica	cr
+496	2009-03-18 15:59:41.298	en	Cuba	cu
+497	2009-03-18 15:59:41.298	sv	Kuba	cu
+498	2009-03-18 15:59:41.314	sv	Kap Verde	cv
+499	2009-03-18 15:59:41.314	en	Cape Verde	cv
+500	2009-03-18 15:59:41.328	sv	Christmas Island	cx
+501	2009-03-18 15:59:41.329	en	Christmas Island	cx
+502	2009-03-18 15:59:41.344	sv	Cypern	cy
+503	2009-03-18 15:59:41.345	en	Cyprus	cy
+504	2009-03-18 15:59:41.357	en	Czech Republic	cz
+505	2009-03-18 15:59:41.357	sv	Tjeckien	cz
+506	2009-03-18 15:59:41.369	en	Germany	de
+507	2009-03-18 15:59:41.369	sv	Tyskland	de
+508	2009-03-18 15:59:41.381	sv	Djibouti	dj
+509	2009-03-18 15:59:41.381	en	Djibouti	dj
+510	2009-03-18 15:59:41.393	sv	Danmark	dk
+511	2009-03-18 15:59:41.393	en	Denmark	dk
+512	2009-03-18 15:59:41.405	sv	Dominica	dm
+513	2009-03-18 15:59:41.405	en	Dominica	dm
+514	2009-03-18 15:59:41.417	sv	Dominikanska republiken	do
+515	2009-03-18 15:59:41.417	en	Dominican Republic	do
+516	2009-03-18 15:59:41.429	en	Algeria	dz
+517	2009-03-18 15:59:41.429	sv	Algeriet	dz
+518	2009-03-18 15:59:41.447	sv	Ecuador	ec
+519	2009-03-18 15:59:41.447	en	Ecuador	ec
+520	2009-03-18 15:59:41.459	en	Estonia	ee
+521	2009-03-18 15:59:41.46	sv	Estland	ee
+522	2009-03-18 15:59:41.471	sv	Egypten	eg
+523	2009-03-18 15:59:41.471	en	Egypt	eg
+524	2009-03-18 15:59:41.483	en	Western Sahara	eh
+525	2009-03-18 15:59:41.483	sv	Western Sahara	eh
+526	2009-03-18 15:59:41.495	sv	Eritrea	er
+527	2009-03-18 15:59:41.495	en	Eritrea	er
+542	2009-03-18 15:59:41.609	en	France	fr
+543	2009-03-18 15:59:41.609	sv	France	fr
+558	2009-03-18 15:59:41.711	en	Greenland	gl
+559	2009-03-18 15:59:41.712	sv	Greenland	gl
+574	2009-03-18 15:59:41.853	en	Guam	gu
+575	2009-03-18 15:59:41.853	sv	Guam	gu
+590	2009-03-18 15:59:41.96	sv	Ungern	hu
+591	2009-03-18 15:59:41.96	en	Hungary	hu
+606	2009-03-18 15:59:42.129	sv	Island	is
+607	2009-03-18 15:59:42.129	en	Iceland	is
+622	2009-03-18 15:59:42.245	sv	Kiribati	ki
+623	2009-03-18 15:59:42.245	en	Kiribati	ki
+638	2009-03-18 15:59:42.357	sv	Laos	la
+639	2009-03-18 15:59:42.357	en	Lao Peoples Democratic Republic	la
+654	2009-03-18 15:59:42.498	sv	Luxembourg	lu
+655	2009-03-18 15:59:42.498	en	Luxembourg	lu
+670	2009-03-18 15:59:42.618	sv	f.d. jugoslaviska republiken Makedonien	mk
+671	2009-03-18 15:59:42.618	en	Macedonia, The Former Yugoslav Republic Of	mk
+686	2009-03-18 15:59:42.715	en	Montserrat	ms
+687	2009-03-18 15:59:42.715	sv	Montserrat	ms
+702	2009-03-18 15:59:42.826	sv	Namibia	na
+703	2009-03-18 15:59:42.826	en	Namibia	na
+718	2009-03-18 15:59:42.949	sv	Nepal	np
+719	2009-03-18 15:59:42.949	en	Nepal	np
+734	2009-03-18 15:59:43.099	sv	Papua Nya Guinea	pg
+735	2009-03-18 15:59:43.099	en	Papua New Guinea	pg
+750	2009-03-18 15:59:43.213	en	Portugal	pt
+751	2009-03-18 15:59:43.213	sv	Portugal	pt
+766	2009-03-18 15:59:43.321	sv	Saudiarabien	sa
+767	2009-03-18 15:59:43.321	en	Saudi Arabia	sa
+782	2009-03-18 15:59:43.428	sv	Svalbard And Jan Mayen	sj
+783	2009-03-18 15:59:43.428	en	Svalbard And Jan Mayen	sj
+798	2009-03-18 15:59:43.532	en	El Salvador	sv
+799	2009-03-18 15:59:43.532	sv	El Salvador	sv
+814	2009-03-18 15:59:43.631	sv	Tadzjikistan	tj
+815	2009-03-18 15:59:43.631	en	Tajikistan	tj
+830	2009-03-18 15:59:43.73	en	Tuvalu	tv
+831	2009-03-18 15:59:43.73	sv	Tuvalu	tv
+846	2009-03-18 15:59:43.83	en	Uzbekistan	uz
+847	2009-03-18 15:59:43.83	sv	Uzbekistan	uz
+862	2009-03-18 15:59:43.925	en	Samoa	ws
+863	2009-03-18 15:59:43.925	sv	Samoa	ws
+528	2009-03-18 15:59:41.507	en	Spain	es
+529	2009-03-18 15:59:41.507	sv	Spain	es
+544	2009-03-18 15:59:41.622	sv	Gabon	ga
+545	2009-03-18 15:59:41.622	en	Gabon	ga
+560	2009-03-18 15:59:41.723	sv	Gambia	gm
+561	2009-03-18 15:59:41.723	en	Gambia	gm
+576	2009-03-18 15:59:41.873	sv	Guinea-Bissau	gw
+577	2009-03-18 15:59:41.873	en	Guinea-Bissau	gw
+592	2009-03-18 15:59:41.973	en	Indonesia	id
+593	2009-03-18 15:59:41.973	sv	Indonesien	id
+608	2009-03-18 15:59:42.143	sv	Italy	it
+609	2009-03-18 15:59:42.143	en	Italy	it
+624	2009-03-18 15:59:42.257	sv	Komorerna	km
+625	2009-03-18 15:59:42.257	en	Comoros	km
+640	2009-03-18 15:59:42.371	sv	Libanon	lb
+641	2009-03-18 15:59:42.371	en	Lebanon	lb
+656	2009-03-18 15:59:42.512	en	Latvia	lv
+657	2009-03-18 15:59:42.512	sv	Lettland	lv
+672	2009-03-18 15:59:42.632	en	Mali	ml
+673	2009-03-18 15:59:42.632	sv	Mali	ml
+688	2009-03-18 15:59:42.727	en	Malta	mt
+689	2009-03-18 15:59:42.727	sv	Malta	mt
+704	2009-03-18 15:59:42.857	sv	New Caledonia	nc
+705	2009-03-18 15:59:42.858	en	New Caledonia	nc
+720	2009-03-18 15:59:42.961	en	Nauru	nr
+721	2009-03-18 15:59:42.961	sv	Nauru	nr
+736	2009-03-18 15:59:43.117	sv	Filippinerna	ph
+737	2009-03-18 15:59:43.117	en	Philippines	ph
+752	2009-03-18 15:59:43.224	sv	Palau	pw
+753	2009-03-18 15:59:43.224	en	Palau	pw
+768	2009-03-18 15:59:43.332	en	Solomon Islands	sb
+769	2009-03-18 15:59:43.332	sv	Salomonöarna	sb
+784	2009-03-18 15:59:43.44	sv	Slovakien	sk
+785	2009-03-18 15:59:43.44	en	Slovakia	sk
+800	2009-03-18 15:59:43.547	sv	Syrien	sy
+801	2009-03-18 15:59:43.547	en	Syrian Arab Republic	sy
+816	2009-03-18 15:59:43.644	en	Tokelau	tk
+817	2009-03-18 15:59:43.644	sv	Tokelau	tk
+832	2009-03-18 15:59:43.743	en	Taiwan, Province Of China	tw
+833	2009-03-18 15:59:43.744	sv	Taiwan	tw
+848	2009-03-18 15:59:43.841	sv	Heliga stolen	va
+849	2009-03-18 15:59:43.841	en	Holy See (Vatican City State)	va
+864	2009-03-18 15:59:43.938	sv	Vanuatu	vu
+865	2009-03-18 15:59:43.938	en	Vanuatu	vu
+530	2009-03-18 15:59:41.519	sv	Etiopien	et
+531	2009-03-18 15:59:41.519	en	Ethiopia	et
+546	2009-03-18 15:59:41.633	en	United Kingdom	gb
+547	2009-03-18 15:59:41.634	sv	United Kingdom	gb
+562	2009-03-18 15:59:41.735	en	Guinea	gn
+563	2009-03-18 15:59:41.735	sv	Guinea	gn
+578	2009-03-18 15:59:41.885	sv	Guyana	gy
+579	2009-03-18 15:59:41.885	en	Guyana	gy
+594	2009-03-18 15:59:41.987	en	Ireland	ie
+595	2009-03-18 15:59:41.987	sv	Ireland	ie
+610	2009-03-18 15:59:42.156	en	Jamaica	jm
+611	2009-03-18 15:59:42.156	sv	Jamaica	jm
+626	2009-03-18 15:59:42.27	en	Saint Kitts And Nevis	kn
+627	2009-03-18 15:59:42.271	sv	Saint Christopher och Nevis	kn
+642	2009-03-18 15:59:42.388	en	Saint Lucia	lc
+643	2009-03-18 15:59:42.388	sv	Saint Lucia	lc
+658	2009-03-18 15:59:42.525	sv	Libyen	ly
+659	2009-03-18 15:59:42.525	en	Libyan Arab Jamahiriya	ly
+674	2009-03-18 15:59:42.643	en	Myanmar	mm
+675	2009-03-18 15:59:42.643	sv	Myanmar	mm
+690	2009-03-18 15:59:42.74	sv	Mauritius	mu
+691	2009-03-18 15:59:42.74	en	Mauritius	mu
+706	2009-03-18 15:59:42.871	en	Niger	ne
+707	2009-03-18 15:59:42.871	sv	Niger	ne
+722	2009-03-18 15:59:42.973	en	Niue	nu
+723	2009-03-18 15:59:42.973	sv	Niue	nu
+738	2009-03-18 15:59:43.128	sv	Pakistan	pk
+739	2009-03-18 15:59:43.129	en	Pakistan	pk
+754	2009-03-18 15:59:43.238	en	Paraguay	py
+755	2009-03-18 15:59:43.238	sv	Paraguay	py
+770	2009-03-18 15:59:43.344	en	Seychelles	sc
+771	2009-03-18 15:59:43.344	sv	Seychellerna	sc
+786	2009-03-18 15:59:43.452	en	Sierra Leone	sl
+787	2009-03-18 15:59:43.452	sv	Sierra Leone	sl
+802	2009-03-18 15:59:43.56	sv	Swaziland	sz
+803	2009-03-18 15:59:43.561	en	Swaziland	sz
+818	2009-03-18 15:59:43.655	sv	Turkmenistan	tm
+819	2009-03-18 15:59:43.655	en	Turkmenistan	tm
+834	2009-03-18 15:59:43.757	sv	Tanzania	tz
+835	2009-03-18 15:59:43.757	en	Tanzania, United Republic Of	tz
+850	2009-03-18 15:59:43.855	sv	Saint Vincent och Grenadinerna	vc
+851	2009-03-18 15:59:43.855	en	Saint Vincent And The Grenadines	vc
+866	2009-03-18 15:59:43.95	en	Yemen	ye
+867	2009-03-18 15:59:43.95	sv	Yemen	ye
+532	2009-03-18 15:59:41.531	sv	Finland	fi
+533	2009-03-18 15:59:41.531	en	Finland	fi
+548	2009-03-18 15:59:41.645	sv	Grenada	gd
+549	2009-03-18 15:59:41.645	en	Grenada	gd
+564	2009-03-18 15:59:41.747	sv	Guadeloupe	gp
+565	2009-03-18 15:59:41.748	en	Guadeloupe	gp
+580	2009-03-18 15:59:41.897	en	Hong Kong	hk
+581	2009-03-18 15:59:41.897	sv	Hong Kong	hk
+596	2009-03-18 15:59:41.999	sv	Israel	il
+597	2009-03-18 15:59:41.999	en	Israel	il
+612	2009-03-18 15:59:42.171	sv	Jordanien	jo
+613	2009-03-18 15:59:42.171	en	Jordan	jo
+628	2009-03-18 15:59:42.285	en	Korea, Democratic Peoples Republic Of	kp
+629	2009-03-18 15:59:42.285	sv	Nordkorea	kp
+644	2009-03-18 15:59:42.401	en	Liechtenstein	li
+645	2009-03-18 15:59:42.402	sv	Liechtenstein	li
+660	2009-03-18 15:59:42.542	en	Morocco	ma
+661	2009-03-18 15:59:42.542	sv	Marocko	ma
+676	2009-03-18 15:59:42.655	sv	Mongoliet	mn
+677	2009-03-18 15:59:42.655	en	Mongolia	mn
+692	2009-03-18 15:59:42.755	sv	Malawi	mw
+693	2009-03-18 15:59:42.755	en	Malawi	mw
+708	2009-03-18 15:59:42.883	en	Norfolk Island	nf
+709	2009-03-18 15:59:42.884	sv	Norfolk Island	nf
+724	2009-03-18 15:59:42.985	sv	Nya Zeeland	nz
+725	2009-03-18 15:59:42.985	en	New Zealand	nz
+740	2009-03-18 15:59:43.14	sv	Polen	pl
+741	2009-03-18 15:59:43.141	en	Poland	pl
+756	2009-03-18 15:59:43.258	sv	Qatar	qa
+757	2009-03-18 15:59:43.258	en	Qatar	qa
+772	2009-03-18 15:59:43.356	sv	Sudan	sd
+773	2009-03-18 15:59:43.356	en	Sudan	sd
+788	2009-03-18 15:59:43.464	sv	San Marino	sm
+789	2009-03-18 15:59:43.464	en	San Marino	sm
+804	2009-03-18 15:59:43.572	sv	Turks And Caicos Islands	tc
+805	2009-03-18 15:59:43.572	en	Turks And Caicos Islands	tc
+820	2009-03-18 15:59:43.667	sv	Tunisien	tn
+821	2009-03-18 15:59:43.668	en	Tunisia	tn
+836	2009-03-18 15:59:43.769	en	Ukraine	ua
+837	2009-03-18 15:59:43.769	sv	Ukraina	ua
+852	2009-03-18 15:59:43.866	sv	Venezuela	ve
+853	2009-03-18 15:59:43.866	en	Venezuela	ve
+868	2009-03-18 15:59:43.962	en	Mayotte	yt
+869	2009-03-18 15:59:43.962	sv	Mayotte	yt
+534	2009-03-18 15:59:41.557	en	Fiji	fj
+535	2009-03-18 15:59:41.557	sv	Fiji	fj
+550	2009-03-18 15:59:41.658	en	Georgia	ge
+551	2009-03-18 15:59:41.658	sv	Georgien	ge
+566	2009-03-18 15:59:41.759	sv	Ekvatorialguinea	gq
+567	2009-03-18 15:59:41.759	en	Equatorial Guinea	gq
+582	2009-03-18 15:59:41.909	sv	Heard Island And Mcdonald Islands	hm
+583	2009-03-18 15:59:41.909	en	Heard Island And Mcdonald Islands	hm
+598	2009-03-18 15:59:42.063	en	India	in
+599	2009-03-18 15:59:42.063	sv	Indien	in
+614	2009-03-18 15:59:42.186	sv	Japan	jp
+615	2009-03-18 15:59:42.186	en	Japan	jp
+630	2009-03-18 15:59:42.299	sv	Sydkorea	kr
+631	2009-03-18 15:59:42.299	en	Korea, Republic Of	kr
+646	2009-03-18 15:59:42.417	sv	Sri Lanka	lk
+647	2009-03-18 15:59:42.417	en	Sri Lanka	lk
+662	2009-03-18 15:59:42.554	en	Monaco	mc
+663	2009-03-18 15:59:42.554	sv	Monaco	mc
+678	2009-03-18 15:59:42.667	sv	Macau	mo
+679	2009-03-18 15:59:42.667	en	Macau	mo
+694	2009-03-18 15:59:42.769	sv	Maldiverna	mv
+695	2009-03-18 15:59:42.769	en	Maldives	mv
+710	2009-03-18 15:59:42.894	sv	Nigeria	ng
+711	2009-03-18 15:59:42.895	en	Nigeria	ng
+726	2009-03-18 15:59:42.997	en	Oman	om
+727	2009-03-18 15:59:42.997	sv	Oman	om
+742	2009-03-18 15:59:43.158	en	Saint Pierre And Miquelon	pm
+743	2009-03-18 15:59:43.158	sv	Saint Pierre And Miquelon	pm
+758	2009-03-18 15:59:43.272	en	Reunion	re
+759	2009-03-18 15:59:43.272	sv	Reunion	re
+774	2009-03-18 15:59:43.368	en	Sweden	se
+775	2009-03-18 15:59:43.368	sv	Sverige	se
+790	2009-03-18 15:59:43.476	sv	Senegal	sn
+791	2009-03-18 15:59:43.476	en	Senegal	sn
+806	2009-03-18 15:59:43.583	sv	Tchad	td
+807	2009-03-18 15:59:43.584	en	Chad	td
+822	2009-03-18 15:59:43.679	sv	Tonga	to
+823	2009-03-18 15:59:43.679	en	Tonga	to
+838	2009-03-18 15:59:43.781	sv	Uganda	ug
+839	2009-03-18 15:59:43.781	en	Uganda	ug
+854	2009-03-18 15:59:43.878	en	Wallis And Futuna	wf
+855	2009-03-18 15:59:43.878	sv	Wallis And Futuna	wf
+870	2009-03-18 15:59:43.975	en	Yugoslavia	yu
+871	2009-03-18 15:59:43.975	sv	Jugoslavien	yu
+536	2009-03-18 15:59:41.572	sv	Falkland Islands (Malvinas)	fk
+537	2009-03-18 15:59:41.572	en	Falkland Islands (Malvinas)	fk
+552	2009-03-18 15:59:41.67	sv	French Guiana	gf
+553	2009-03-18 15:59:41.67	en	French Guiana	gf
+568	2009-03-18 15:59:41.771	sv	Greece	gr
+569	2009-03-18 15:59:41.771	en	Greece	gr
+584	2009-03-18 15:59:41.921	sv	Honduras	hn
+585	2009-03-18 15:59:41.921	en	Honduras	hn
+600	2009-03-18 15:59:42.084	sv	British Indian Ocean Territory	io
+601	2009-03-18 15:59:42.084	en	British Indian Ocean Territory	io
+616	2009-03-18 15:59:42.203	sv	Kenya	ke
+617	2009-03-18 15:59:42.203	en	Kenya	ke
+632	2009-03-18 15:59:42.311	en	Kuwait	kw
+633	2009-03-18 15:59:42.311	sv	Kuwait	kw
+648	2009-03-18 15:59:42.431	sv	Liberia	lr
+649	2009-03-18 15:59:42.431	en	Liberia	lr
+664	2009-03-18 15:59:42.569	sv	Moldavien	md
+665	2009-03-18 15:59:42.569	en	Moldova, Republic Of	md
+680	2009-03-18 15:59:42.679	en	Northern Mariana Islands	mp
+681	2009-03-18 15:59:42.679	sv	Northern Mariana Islands	mp
+696	2009-03-18 15:59:42.781	sv	Mexiko	mx
+697	2009-03-18 15:59:42.781	en	Mexico	mx
+712	2009-03-18 15:59:42.907	en	Nicaragua	ni
+713	2009-03-18 15:59:42.907	sv	Nicaragua	ni
+728	2009-03-18 15:59:43.052	sv	Panama	pa
+729	2009-03-18 15:59:43.052	en	Panama	pa
+744	2009-03-18 15:59:43.17	en	Pitcairn	pn
+745	2009-03-18 15:59:43.17	sv	Pitcairn	pn
+760	2009-03-18 15:59:43.284	en	Romania	ro
+761	2009-03-18 15:59:43.284	sv	Rumänien	ro
+776	2009-03-18 15:59:43.386	sv	Singapore	sg
+777	2009-03-18 15:59:43.386	en	Singapore	sg
+792	2009-03-18 15:59:43.491	en	Somalia	so
+793	2009-03-18 15:59:43.491	sv	Somalia	so
+808	2009-03-18 15:59:43.596	en	French Southern Territories	tf
+809	2009-03-18 15:59:43.596	sv	French Southern Territories	tf
+824	2009-03-18 15:59:43.691	sv	East Timor	tp
+825	2009-03-18 15:59:43.691	en	East Timor	tp
+840	2009-03-18 15:59:43.793	sv	United States Minor Outlying Islands	um
+841	2009-03-18 15:59:43.793	en	United States Minor Outlying Islands	um
+856	2009-03-18 15:59:43.89	en	Virgin Islands, British	vg
+857	2009-03-18 15:59:43.89	sv	Virgin Islands, British	vg
+872	2009-03-18 15:59:43.991	en	South Africa	za
+873	2009-03-18 15:59:43.991	sv	Sydafrika	za
+538	2009-03-18 15:59:41.586	sv	Mikronesien	fm
+539	2009-03-18 15:59:41.586	en	Micronesia, Federated States Of	fm
+554	2009-03-18 15:59:41.681	en	Ghana	gh
+555	2009-03-18 15:59:41.681	sv	Ghana	gh
+570	2009-03-18 15:59:41.802	sv	South Georgia And The South Sandwich Islands	gs
+571	2009-03-18 15:59:41.802	en	South Georgia And The South Sandwich Islands	gs
+586	2009-03-18 15:59:41.933	en	Croatia	hr
+587	2009-03-18 15:59:41.933	sv	Kroatien	hr
+602	2009-03-18 15:59:42.099	en	Iraq	iq
+603	2009-03-18 15:59:42.099	sv	Irak	iq
+618	2009-03-18 15:59:42.219	en	Kyrgyzstan	kg
+619	2009-03-18 15:59:42.219	sv	Kirgizistan	kg
+634	2009-03-18 15:59:42.326	en	Cayman Islands	ky
+635	2009-03-18 15:59:42.326	sv	Cayman Islands	ky
+650	2009-03-18 15:59:42.445	sv	Lesotho	ls
+651	2009-03-18 15:59:42.445	en	Lesotho	ls
+666	2009-03-18 15:59:42.588	en	Madagascar	mg
+667	2009-03-18 15:59:42.589	sv	Madagaskar	mg
+682	2009-03-18 15:59:42.691	sv	Martinique	mq
+683	2009-03-18 15:59:42.691	en	Martinique	mq
+698	2009-03-18 15:59:42.795	en	Malaysia	my
+699	2009-03-18 15:59:42.795	sv	Malaysia	my
+714	2009-03-18 15:59:42.922	sv	Nederländerna	nl
+715	2009-03-18 15:59:42.922	en	Netherlands	nl
+730	2009-03-18 15:59:43.068	sv	Peru	pe
+731	2009-03-18 15:59:43.068	en	Peru	pe
+746	2009-03-18 15:59:43.186	sv	Puerto Rico	pr
+747	2009-03-18 15:59:43.186	en	Puerto Rico	pr
+762	2009-03-18 15:59:43.296	en	Russian Federation	ru
+763	2009-03-18 15:59:43.296	sv	Ryssland	ru
+778	2009-03-18 15:59:43.403	en	Saint Helena	sh
+779	2009-03-18 15:59:43.404	sv	Saint Helena	sh
+794	2009-03-18 15:59:43.506	en	Suriname	sr
+795	2009-03-18 15:59:43.506	sv	Surinam	sr
+810	2009-03-18 15:59:43.607	sv	Togo	tg
+811	2009-03-18 15:59:43.608	en	Togo	tg
+826	2009-03-18 15:59:43.703	en	Turkey	tr
+827	2009-03-18 15:59:43.703	sv	Turkiet	tr
+842	2009-03-18 15:59:43.806	sv	USA	us
+843	2009-03-18 15:59:43.806	en	USA	us
+858	2009-03-18 15:59:43.902	sv	Virgin Islands, U.S.	vi
+859	2009-03-18 15:59:43.902	en	Virgin Islands, U.S.	vi
+874	2009-03-18 15:59:44.046	en	Zambia	zm
+875	2009-03-18 15:59:44.046	sv	Zambia	zm
+540	2009-03-18 15:59:41.597	sv	Faroe Islands	fo
+541	2009-03-18 15:59:41.597	en	Faroe Islands	fo
+556	2009-03-18 15:59:41.693	en	Gibraltar	gi
+557	2009-03-18 15:59:41.693	sv	Gibraltar	gi
+572	2009-03-18 15:59:41.823	en	Guatemala	gt
+573	2009-03-18 15:59:41.823	sv	Guatemala	gt
+588	2009-03-18 15:59:41.945	en	Haiti	ht
+589	2009-03-18 15:59:41.945	sv	Haiti	ht
+604	2009-03-18 15:59:42.114	sv	Iran	ir
+605	2009-03-18 15:59:42.114	en	Iran, Islamic Republic Of	ir
+620	2009-03-18 15:59:42.233	sv	Kambodja	kh
+621	2009-03-18 15:59:42.233	en	Cambodia	kh
+636	2009-03-18 15:59:42.341	sv	Kazakstan	kz
+637	2009-03-18 15:59:42.341	en	Kazakstan	kz
+652	2009-03-18 15:59:42.483	sv	Litauen	lt
+653	2009-03-18 15:59:42.483	en	Lithuania	lt
+668	2009-03-18 15:59:42.603	sv	Marshallöarna	mh
+669	2009-03-18 15:59:42.603	en	Marshall Islands	mh
+684	2009-03-18 15:59:42.703	en	Mauritania	mr
+685	2009-03-18 15:59:42.703	sv	Mauretanien	mr
+700	2009-03-18 15:59:42.814	sv	Moçambique	mz
+701	2009-03-18 15:59:42.814	en	Mozambique	mz
+716	2009-03-18 15:59:42.935	sv	Norge	no
+717	2009-03-18 15:59:42.935	en	Norway	no
+732	2009-03-18 15:59:43.085	sv	French Polynesia	pf
+733	2009-03-18 15:59:43.085	en	French Polynesia	pf
+748	2009-03-18 15:59:43.198	en	Palestinian Territory, Occupied	ps
+749	2009-03-18 15:59:43.198	sv	Palestinian Territory, Occupied	ps
+764	2009-03-18 15:59:43.308	sv	Rwanda	rw
+765	2009-03-18 15:59:43.308	en	Rwanda	rw
+780	2009-03-18 15:59:43.416	en	Slovenia	si
+781	2009-03-18 15:59:43.416	sv	Slovenien	si
+796	2009-03-18 15:59:43.519	sv	São Tomé och Príncipe	st
+797	2009-03-18 15:59:43.519	en	Sao Tome And Principe	st
+812	2009-03-18 15:59:43.62	en	Thailand	th
+813	2009-03-18 15:59:43.62	sv	Thailand	th
+828	2009-03-18 15:59:43.715	sv	Trinidad och Tobago	tt
+829	2009-03-18 15:59:43.715	en	Trinidad And Tobago	tt
+844	2009-03-18 15:59:43.818	sv	Uruguay	uy
+845	2009-03-18 15:59:43.818	en	Uruguay	uy
+860	2009-03-18 15:59:43.913	en	Viet Nam	vn
+861	2009-03-18 15:59:43.913	sv	Vietnam	vn
+876	2009-03-18 15:59:44.063	en	Zimbabwe	zw
+877	2009-03-18 15:59:44.063	sv	Zimbabwe	zw
+\.
+
+
+--
+-- Name: country_name_country_code_key; Type: CONSTRAINT; Schema: public; Owner: diva
+--
+
+ALTER TABLE ONLY country_name
+    ADD CONSTRAINT country_name_country_code_key UNIQUE (country_code, locale);
+
+
+--
+-- Name: country_name_pkey; Type: CONSTRAINT; Schema: public; Owner: diva
+--
+
+ALTER TABLE ONLY country_name
+    ADD CONSTRAINT country_name_pkey PRIMARY KEY (country_name_id);
+
+
+--
+-- Name: country_pkey; Type: CONSTRAINT; Schema: public; Owner: diva
+--
+
+ALTER TABLE ONLY country
+    ADD CONSTRAINT country_pkey PRIMARY KEY (country_code);
+
+
