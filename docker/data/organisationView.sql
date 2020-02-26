@@ -1,7 +1,8 @@
 CREATE VIEW public.divaOrganisation 
 as select CAST(o.organisation_id as varchar) as id, o.domain, o.organisation_name as defaultname, 
 o.organisation_name_locale, o.closed_date, o.organisation_code, o.orgnumber, o.organisation_homepage, 
-o.not_eligible, ot.organisation_type_code as type_code, alt.organisation_name_id, 
+o.not_eligible, o.libris_code, o.show_in_portal, o.show_in_defence, o.top_level, 
+ot.organisation_type_code as type_code, alt.organisation_name_id, 
 coalesce(alt.organisation_name,'') as alternative_name,
 a.address_id, a.city, a.street, a.postbox, a.postnumber, a.country_code 
 from public.organisation o 
