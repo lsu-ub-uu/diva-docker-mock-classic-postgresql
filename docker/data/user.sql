@@ -316,8 +316,15 @@ ALTER TABLE ONLY "user"
 
 ALTER TABLE ONLY "user"
     ADD CONSTRAINT user_pkey PRIMARY KEY (db_id);
+
+--
+-- Name: group_pkey; Type: CONSTRAINT; Schema: public; Owner: diva
+--
+
+ALTER TABLE ONLY "group"
+    ADD CONSTRAINT group_pkey PRIMARY KEY (group_id);
     
-    --
+--
 -- Name: user_group_pkey; Type: CONSTRAINT; Schema: public; Owner: diva
 --
 
