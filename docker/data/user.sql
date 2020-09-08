@@ -49,6 +49,68 @@ CREATE TABLE "group" (
 ALTER TABLE "group" OWNER TO diva;
 
 --
+-- Name: group_educational_program; Type: TABLE; Schema: public; Owner: diva
+--
+
+CREATE TABLE group_educational_program (
+    group_id integer NOT NULL,
+    subject_id integer NOT NULL
+);
+
+
+ALTER TABLE group_educational_program OWNER TO diva;
+
+--
+-- Name: group_organisation; Type: TABLE; Schema: public; Owner: diva
+--
+
+CREATE TABLE group_organisation (
+    group_group_id integer NOT NULL,
+    organisationaccess_organisation_id integer NOT NULL
+);
+
+
+ALTER TABLE group_organisation OWNER TO diva;
+
+--
+-- Name: group_publication_type; Type: TABLE; Schema: public; Owner: diva
+--
+
+CREATE TABLE group_publication_type (
+    group_group_id integer NOT NULL,
+    publicationtypeaccess_publication_type_id integer NOT NULL
+);
+
+
+ALTER TABLE group_publication_type OWNER TO diva;
+
+--
+-- Name: group_sequence; Type: SEQUENCE; Schema: public; Owner: diva
+--
+
+CREATE SEQUENCE group_sequence
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE group_sequence OWNER TO diva;
+
+--
+-- Name: group_series; Type: TABLE; Schema: public; Owner: diva
+--
+
+CREATE TABLE group_series (
+    group_group_id integer NOT NULL,
+    seriesaccess_series_id integer NOT NULL
+);
+
+
+ALTER TABLE group_series OWNER TO diva;
+
+--
 -- Name: user; Type: TABLE; Schema: public; Owner: diva
 --
 
@@ -296,6 +358,110 @@ COPY trail_access (trail_access_id, last_updated, access_add, access_edit, acces
 850	2017-04-04 16:49:58.742	t	t	t	f	f	f	f
 \.
 
+--
+-- Data for Name: group_organisation; Type: TABLE DATA; Schema: public; Owner: diva
+--
+
+COPY group_organisation (group_group_id, organisationaccess_organisation_id) FROM stdin;
+200	400
+452	400
+500	400
+451	1200
+450	1200
+101	400
+101	1100
+750	400
+600	1
+950	50
+\.
+
+
+--
+-- Data for Name: group_publication_type; Type: TABLE DATA; Schema: public; Owner: diva
+--
+
+COPY group_publication_type (group_group_id, publicationtypeaccess_publication_type_id) FROM stdin;
+150	65
+150	66
+150	56
+150	55
+150	50
+150	52
+150	51
+150	62
+150	61
+150	64
+150	63
+150	58
+150	57
+150	60
+150	59
+450	50
+451	57
+600	65
+600	66
+600	54
+600	53
+600	56
+600	55
+600	50
+600	52
+600	51
+600	62
+600	61
+600	64
+600	63
+600	58
+600	57
+600	60
+600	59
+101	65
+101	57
+101	54
+750	65
+750	66
+750	50
+750	52
+750	51
+750	62
+750	61
+750	64
+750	63
+750	58
+750	57
+750	60
+750	59
+451	54
+450	57
+452	57
+500	57
+950	54
+850	54
+850	53
+750	67
+750	54
+750	53
+750	56
+750	55
+\.
+
+
+--
+-- Name: group_sequence; Type: SEQUENCE SET; Schema: public; Owner: diva
+--
+
+SELECT pg_catalog.setval('group_sequence', 21, true);
+
+
+--
+-- Data for Name: group_series; Type: TABLE DATA; Schema: public; Owner: diva
+--
+
+COPY group_series (group_group_id, seriesaccess_series_id) FROM stdin;
+500	300
+950	200
+\.
+
 
 --
 -- Name: trail_sequence; Type: SEQUENCE SET; Schema: public; Owner: diva
@@ -324,23 +490,64 @@ ALTER TABLE ONLY "user"
 ALTER TABLE ONLY user_group
     ADD CONSTRAINT user_group_pkey PRIMARY KEY (users_db_id, groups_group_id);
     
-    --
--- Name: fk72a9010b3a058db4; Type: FK CONSTRAINT; Schema: public; Owner: diva
---
-
-ALTER TABLE ONLY user_group
-    ADD CONSTRAINT fk72a9010b3a058db4 FOREIGN KEY (groups_group_id) REFERENCES "group"(group_id);
-    
+   
     --
 -- Name: fk72a9010b7e9f6321; Type: FK CONSTRAINT; Schema: public; Owner: diva
 --
 
-ALTER TABLE ONLY user_group
-    ADD CONSTRAINT fk72a9010b7e9f6321 FOREIGN KEY (users_db_id) REFERENCES "user"(db_id);
-    
-    --
+        --
 -- Name: trail_access_pkey; Type: CONSTRAINT; Schema: public; Owner: diva
 --
 
 ALTER TABLE ONLY trail_access
     ADD CONSTRAINT trail_access_pkey PRIMARY KEY (trail_access_id);
+
+    --
+-- Name: group_organisation_pkey; Type: CONSTRAINT; Schema: public; Owner: diva
+--
+
+ALTER TABLE ONLY group_organisation
+    ADD CONSTRAINT group_organisation_pkey PRIMARY KEY (group_group_id, organisationaccess_organisation_id);
+
+
+--
+-- Name: group_pkey; Type: CONSTRAINT; Schema: public; Owner: diva
+--
+
+ALTER TABLE ONLY "group"
+    ADD CONSTRAINT group_pkey PRIMARY KEY (group_id);
+
+
+--
+-- Name: group_publication_type_pkey; Type: CONSTRAINT; Schema: public; Owner: diva
+--
+
+ALTER TABLE ONLY group_publication_type
+    ADD CONSTRAINT group_publication_type_pkey PRIMARY KEY (group_group_id, publicationtypeaccess_publication_type_id);
+
+
+--
+-- Name: group_series_pkey; Type: CONSTRAINT; Schema: public; Owner: diva
+--
+
+ALTER TABLE ONLY group_series
+    ADD CONSTRAINT group_series_pkey PRIMARY KEY (group_group_id, seriesaccess_series_id);
+
+
+--
+-- Name: group_type_pkey; Type: CONSTRAINT; Schema: public; Owner: diva
+--
+
+ALTER TABLE ONLY group_type
+    ADD CONSTRAINT group_type_pkey PRIMARY KEY (code);
+
+ALTER TABLE ONLY user_group
+    ADD CONSTRAINT fk72a9010b7e9f6321 FOREIGN KEY (users_db_id) REFERENCES "user"(db_id);
+    
+        --
+-- Name: fk72a9010b3a058db4; Type: FK CONSTRAINT; Schema: public; Owner: diva
+--
+
+ ALTER TABLE ONLY user_group
+    ADD CONSTRAINT fk72a9010b3a058db4 FOREIGN KEY (groups_group_id) REFERENCES "group"(group_id);
+ 
