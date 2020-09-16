@@ -276,6 +276,9 @@ COPY "user" (db_id, last_updated, domain, email, first_name, last_name, user_id,
 61	2018-11-05 15:00:00	test	johan.andersson@ub.uu.se	Johan	Andersson	johan549	t	t	t	t
 62	2018-11-05 15:00:00	test	fitnesseAdminDb@ub.uu.se	Fitnesse	Admin	fitnesseAdminDb	t	t	t	t
 63	2018-11-05 15:00:00	test	fitnesseUserDb@ub.uu.se	Fitnesse	User	fitnesseUserDb	t	t	t	t
+64	2020-09-16 15:00:00	diva	fitnesseSystemAdmin@ub.uu.se	Fitnesse	SystemAdmin	fitnesseSystemAdmin	t	t	t	t
+65	2020-09-16 15:00:00	uu	fitnesseDomainAdminUU@ub.uu.se	Fitnesse	DomainAdminUU	fitnesseDomainAdminUU	t	t	t	t
+66	2020-09-16 15:00:00	kth	fitnesseDomainAdminKTH@ub.uu.se	Fitnesse	DomainAdminKTH	fitnesseDomainAdminKTH	t	t	t	t
 \.
 
 --
@@ -306,6 +309,9 @@ COPY user_group (users_db_id, groups_group_id) FROM stdin;
 61	600
 62	66
 63	600
+64	50
+65	66
+66	57
 \.
 
 --
