@@ -201,7 +201,8 @@ COPY public.organisation (organisation_id, last_updated, domain, closed_date, ol
 1501	2014-06-16 15:40:46.427	test	\N	\N	\N	Testinstitution	sv	\N	\N	\N	\N	\N	54	f	f	f	f	\N
 1500	2014-06-16 15:40:58.443	test	\N	\N	\N	Skolan för Testning	sv	\N	\N	\N	\N	\N	52	f	f	f	f	\N
 1100	2014-06-23 14:37:46.059	test	\N	\N	\N	Testfakultet	sv	\N	\N	\N	\N	\N	52	f	f	f	f	\N
-1750	2015-03-12 10:48:53.898	uu	\N	\N	\N	Uppsala universitet	sv	\N	\N	\N	http://uu.se	\N	50	f	t	t	f	\N
+1750	2015-03-12 10:48:53.898	uu	\N	\N	\N	Uppsala universitet	sv	lib-uu	\N	\N	http://uu.se	\N	50	f	t	t	f	\N
+1751	2020-10-05 10:48:53.898	kth	\N	\N	\N	Kungliga Tekniska Högskolan	sv	lib-kth	\N	\N	http://kth.se	\N	50	f	t	t	f	\N
 50	2015-04-29 13:33:25.414	test	\N	\N	\N	Uppsala institution	sv	\N	\N	133	\N	50	54	f	f	f	f	\N
 1900	2015-04-29 14:27:00.838	test	\N	\N	\N	Teknisk-naturvetenskapliga vetenskapsområdet	sv	\N	\N	133	\N	\N	57	f	f	f	f	\N
 1901	2015-04-29 14:31:06.551	test	\N	\N	\N	Tekniska sektionen	sv	\N	\N	\N	\N	\N	56	f	f	f	f	\N
@@ -287,6 +288,7 @@ COPY public.organisation_name (organisation_name_id, last_updated, locale, organ
 6650	2014-06-16 15:40:06.181	en	School of Tests	1500
 6651	2014-06-16 15:40:46.427	en	Department of Test	1501
 6900	2015-03-12 10:48:53.9	en	Uppsala University	1750
+6901	2020-10-05 10:48:53.9	en	Royal Institute of Technology	1751
 7100	2015-04-29 14:27:00.845	en	Disciplinary Domain of Science and Technology	1900
 7101	2015-04-29 14:31:06.551	en	Technology	1901
 8000	2016-07-19 16:37:09.32	en	Glafo Glasforskningsinstitutet	2000
