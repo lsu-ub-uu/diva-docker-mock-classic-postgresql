@@ -201,6 +201,8 @@ COPY public.organisation (organisation_id, last_updated, domain, closed_date, ol
 1501	2014-06-16 15:40:46.427	test	\N	\N	\N	Testinstitution	sv	\N	\N	\N	\N	\N	54	f	f	f	f	\N
 1500	2014-06-16 15:40:58.443	test	\N	\N	\N	Skolan för Testning	sv	\N	\N	\N	\N	\N	52	f	f	f	f	\N
 1100	2014-06-23 14:37:46.059	test	\N	\N	\N	Testfakultet	sv	\N	\N	\N	\N	\N	52	f	f	f	f	\N
+1748	2015-03-12 10:48:53.898	uu	\N	\N	\N	Root Uppsala universitet	sv	lib-rootuu	\N	\N	http://root.uu.se	\N	49	f	t	t	f	\N
+1749	2015-03-12 10:48:53.898	kth	\N	\N	\N	Root Kungliga tekniska högskolan	sv	lib-rootkth	\N	\N	http://root.kth.se	\N	49	f	t	t	f	\N
 1750	2015-03-12 10:48:53.898	uu	\N	\N	\N	Uppsala universitet	sv	lib-uu	\N	\N	http://uu.se	\N	50	f	t	t	f	\N
 1751	2020-10-05 10:48:53.898	kth	\N	\N	\N	Kungliga Tekniska Högskolan	sv	lib-kth	\N	\N	http://kth.se	\N	50	f	t	t	f	\N
 50	2015-04-29 13:33:25.414	test	\N	\N	\N	Uppsala institution	sv	\N	\N	133	\N	50	54	f	f	f	f	\N
