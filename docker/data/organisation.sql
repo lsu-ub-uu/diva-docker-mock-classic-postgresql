@@ -301,6 +301,8 @@ COPY public.organisation_name (organisation_name_id, last_updated, locale, organ
 8101	2017-03-03 10:55:26.813	en	Faculty of Health Sciences	2101
 8102	2017-03-03 10:57:07.55	en	Division of Drug Research	2102
 8150	2017-03-21 09:38:33.943	en	FMV	2150
+8151	2017-03-03 10:57:07.55	en	Root Uppsala university	1748
+8152	2017-03-21 09:38:33.943	en	Root KTH	1749
 \.
 
 
