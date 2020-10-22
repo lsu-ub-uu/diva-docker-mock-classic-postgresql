@@ -673,7 +673,7 @@ ALTER TABLE ONLY public.organisation_parent
 --
 
 CREATE SEQUENCE public.name_sequence
-    START WITH 1
+    START WITH 10000
     INCREMENT BY 1
     NO MINVALUE
     NO MAXVALUE
@@ -687,7 +687,7 @@ ALTER TABLE public.name_sequence OWNER TO diva;
 --
 
 CREATE SEQUENCE public.organisation_predecessor_description_sequence
-    START WITH 1
+    START WITH 10000
     INCREMENT BY 1
     NO MINVALUE
     NO MAXVALUE
@@ -702,7 +702,7 @@ ALTER TABLE public.organisation_predecessor_description_sequence OWNER TO diva;
 --
 
 CREATE SEQUENCE public.address_sequence
-    START WITH 1
+    START WITH 10000
     INCREMENT BY 1
     NO MINVALUE
     NO MAXVALUE

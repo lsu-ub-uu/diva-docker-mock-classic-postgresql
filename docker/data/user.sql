@@ -89,7 +89,7 @@ ALTER TABLE group_publication_type OWNER TO diva;
 --
 
 CREATE SEQUENCE group_sequence
-    START WITH 1
+    START WITH 10000
     INCREMENT BY 1
     NO MINVALUE
     NO MAXVALUE
@@ -148,7 +148,7 @@ ALTER TABLE user_group OWNER TO diva;
 --
 
 CREATE SEQUENCE user_sequence
-    START WITH 1
+    START WITH 10000
     INCREMENT BY 1
     NO MINVALUE
     NO MAXVALUE
@@ -181,7 +181,7 @@ ALTER TABLE trail_access OWNER TO diva;
 --
 
 CREATE SEQUENCE trail_sequence
-    START WITH 1
+    START WITH 10000
     INCREMENT BY 1
     NO MINVALUE
     NO MAXVALUE
