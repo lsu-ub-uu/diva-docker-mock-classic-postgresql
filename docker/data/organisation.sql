@@ -222,6 +222,7 @@ COPY public.organisation (organisation_id, last_updated, domain, closed_date, ol
 1450	2013-09-16 16:13:46.552	norden	\N	\N	\N	Nordiska ministerrådet	sv	\N	\N	\N	http://www.norden.org	\N	50	f	t	t	f	3333333333
 1451	2013-09-16 16:15:27.408	nationalmuseum	\N	\N	\N	Nationalmuseum	sv	\N	\N	\N	http://www.nationalmuseum.se/	\N	50	f	t	t	f	44444444
 1452	2013-09-16 16:15:27.408	test	\N	\N	\N	Organisation som saknar alternativt namn	sv	\N	\N	\N	http://org.utan.alternativ/	\N	50	f	t	t	f	44444444
+1453	2013-09-16 16:15:27.408	test	\N	\N	\N	Organisation för fitnesse test	sv	\N	\N	\N	http://asdf/	\N	50	f	t	t	f	44444444
 \.
 
 
@@ -303,6 +304,7 @@ COPY public.organisation_name (organisation_name_id, last_updated, locale, organ
 8150	2017-03-21 09:38:33.943	en	FMV	2150
 8151	2017-03-03 10:57:07.55	en	Root Uppsala university	1748
 8152	2017-03-21 09:38:33.943	en	Root KTH	1749
+8153	2017-03-21 09:38:33.943	en	En fitnesse test organiation	1453
 \.
 
 
@@ -375,7 +377,7 @@ COPY public.organisation_predecessor (organisation_id, organisation_predecessor_
 1150	1110
 1100	400
 1200	1101
-1101	1452
+1101	1453
 \.
 
 
