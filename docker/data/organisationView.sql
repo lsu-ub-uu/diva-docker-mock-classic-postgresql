@@ -57,3 +57,10 @@ from public.organisation o
 left join organisation_type ot on o.organisation_type_id = ot.organisation_type_id 
 left join organisation_name alt on o.organisation_id = alt.organisation_id 
 left join organisation_address a on o.address_id = a.address_id; 
+
+
+CREATE OR REPLACE VIEW public.organisationrelations
+as select distinct op.organisation_id, op.organisation_predecessor_id as relation from organisation_predecessor op
+union all
+select oparent.organisation_id, oparent.organisation_parent_id from organisation_parent oparent;
+
