@@ -203,7 +203,7 @@ COPY public.organisation (organisation_id, last_updated, domain, closed_date, ol
 1100	2014-06-23 14:37:46.059	test	\N	\N	\N	Testfakultet	sv	\N	\N	\N	\N	\N	52	f	f	f	f	\N
 1748	2015-03-12 10:48:53.898	uu	\N	\N	\N	Root Uppsala universitet	sv	lib-rootuu	\N	\N	http://root.uu.se	\N	49	f	t	t	f	\N
 1749	2015-03-12 10:48:53.898	kth	\N	\N	\N	Root Kungliga tekniska högskolan	sv	lib-rootkth	\N	\N	http://root.kth.se	\N	49	f	t	t	f	\N
-1750	2015-03-12 10:48:53.898	uu	\N	\N	\N	Uppsala universitet	sv	lib-uu	\N	\N	http://uu.se	\N	50	f	t	t	f	\N
+1750	2015-03-12 10:48:53.898	uu	\N	\N	\N	Uppsala universitet	sv	lib-uu	\N	\N	http://uu.se	\N	50	f	t	t	f	202100-2935
 1751	2020-10-05 10:48:53.898	kth	\N	\N	\N	Kungliga Tekniska Högskolan	sv	lib-kth	\N	\N	http://kth.se	\N	50	f	t	t	f	\N
 50	2015-04-29 13:33:25.414	test	\N	\N	\N	Uppsala institution	sv	\N	\N	133	\N	50	54	f	f	f	f	\N
 1900	2015-04-29 14:27:00.838	test	\N	\N	\N	Teknisk-naturvetenskapliga vetenskapsområdet	sv	\N	\N	133	\N	\N	57	f	f	f	f	\N
@@ -217,12 +217,12 @@ COPY public.organisation (organisation_id, last_updated, domain, closed_date, ol
 2101	2017-03-03 10:57:22.008	test	\N	\N	\N	Faculty of Health Sciences	sv	\N	\N	\N	\N	\N	52	f	f	f	f	\N
 2150	2017-03-21 09:38:33.94	fmv	\N	\N	\N	FMV	sv	\N	\N	\N	http://	\N	66	f	t	t	t	\N
 1	2009-03-18 00:00:00	test	\N	\N	\N	Uppsala universitet	sv	\N	\N	\N	\N	\N	50	t	t	t	f	202100-2932
-1350	2013-03-04 14:41:43.811	vti	\N	\N	\N	VTI	sv	\N	\N	\N	http://vti.se	\N	50	f	t	t	f	111111111
-1400	2013-03-06 11:34:19.71	nrm	\N	\N	\N	NRM	sv	\N	\N	\N	http://www.nrm.se	\N	50	f	t	t	f	2222222222222
-1450	2013-09-16 16:13:46.552	norden	\N	\N	\N	Nordiska ministerrådet	sv	\N	\N	\N	http://www.norden.org	\N	50	f	t	t	f	3333333333
-1451	2013-09-16 16:15:27.408	nationalmuseum	\N	\N	\N	Nationalmuseum	sv	\N	\N	\N	http://www.nationalmuseum.se/	\N	50	f	t	t	f	44444444
-1452	2013-09-16 16:15:27.408	test	\N	\N	\N	Organisation som saknar alternativt namn	sv	\N	\N	\N	http://org.utan.alternativ/	\N	50	f	t	t	f	44444444
-1453	2013-09-16 16:15:27.408	test	\N	\N	\N	Organisation för fitnesse test	sv	\N	\N	\N	http://asdf/	\N	50	f	t	t	f	44444444
+1350	2013-03-04 14:41:43.811	vti	\N	\N	\N	VTI	sv	\N	\N	\N	http://vti.se	\N	50	f	t	t	f	202100-0704
+1400	2013-03-06 11:34:19.71	nrm	\N	\N	\N	NRM	sv	\N	\N	\N	http://www.nrm.se	\N	50	f	t	t	f	202100-1124
+1450	2013-09-16 16:13:46.552	norden	\N	\N	\N	Nordiska ministerrådet	sv	\N	\N	\N	http://www.norden.org	\N	50	f	t	t	f	43041916
+1451	2013-09-16 16:15:27.408	nationalmuseum	\N	\N	\N	Nationalmuseum	sv	\N	\N	\N	http://www.nationalmuseum.se/	\N	50	f	t	t	f	202100-1108
+1452	2013-09-16 16:15:27.408	test	\N	\N	\N	Organisation som saknar alternativt namn	sv	\N	\N	\N	http://org.utan.alternativ/	\N	50	f	t	t	f	202100-2306
+1453	2013-09-16 16:15:27.408	test	\N	\N	\N	Organisation för fitnesse test	sv	\N	\N	\N	http://asdf/	\N	50	f	t	t	f	202100-2128
 \.
 
 
