@@ -1,7 +1,7 @@
 CREATE OR REPLACE VIEW public.divaOrganisation 
 as select CAST(o.organisation_id as varchar) as id, o.domain, o.organisation_name as defaultname, 
 o.organisation_name_locale, o.closed_date, o.organisation_code, o.orgnumber, o.organisation_homepage, 
-o.not_eligible, o.libris_code, o.show_in_portal, o.show_in_defence, o.top_level, 
+o.not_eligible, o.show_in_portal, o.show_in_defence, o.top_level, 
 ot.organisation_type_code as type_code, alt.organisation_name_id, 
 coalesce(alt.organisation_name,'') as alternative_name,
 a.address_id, a.city, a.street, a.postbox, a.postnumber, a.country_code 
@@ -25,7 +25,7 @@ from organisation_parent;
 CREATE OR REPLACE VIEW public.commonorganisationview 
 as select o.organisation_id as id, o.domain, o.organisation_name as defaultname, 
 o.organisation_name_locale, o.closed_date, o.organisation_code, o.orgnumber, o.organisation_homepage, 
-o.not_eligible, o.libris_code, o.show_in_portal, o.show_in_defence, o.top_level, 
+o.not_eligible, o.show_in_portal, o.show_in_defence, o.top_level, 
 ot.organisation_type_code as type_code, alt.organisation_name_id, 
 coalesce(alt.organisation_name,'') as alternative_name,
 a.address_id, a.city, a.street, a.postbox, a.postnumber, a.country_code 
@@ -37,7 +37,7 @@ left join organisation_address a on o.address_id = a.address_id where o.organisa
 CREATE OR REPLACE VIEW public.rootorganisationview 
 as select o.organisation_id as id, o.domain, o.organisation_name as defaultname, 
 o.organisation_name_locale, o.closed_date, o.organisation_code, o.orgnumber, o.organisation_homepage, 
-o.not_eligible, o.libris_code, o.show_in_portal, o.show_in_defence, o.top_level, 
+o.not_eligible, o.show_in_portal, o.show_in_defence, o.top_level, 
 ot.organisation_type_code as type_code, alt.organisation_name_id, 
 coalesce(alt.organisation_name,'') as alternative_name,
 a.address_id, a.city, a.street, a.postbox, a.postnumber, a.country_code 
@@ -49,7 +49,7 @@ left join organisation_address a on o.address_id = a.address_id where o.organisa
 CREATE OR REPLACE VIEW public.organisationview 
 as select o.organisation_id as id, o.domain, o.organisation_name as defaultname, 
 o.organisation_name_locale, o.closed_date, o.organisation_code, o.orgnumber, o.organisation_homepage, 
-o.not_eligible, o.libris_code, o.show_in_portal, o.show_in_defence, o.top_level, 
+o.not_eligible, o.show_in_portal, o.show_in_defence, o.top_level, 
 ot.organisation_type_code as type_code, alt.organisation_name_id, 
 coalesce(alt.organisation_name,'') as alternative_name,
 a.address_id, a.city, a.street, a.postbox, a.postnumber, a.country_code 

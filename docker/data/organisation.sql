@@ -223,6 +223,9 @@ COPY public.organisation (organisation_id, last_updated, domain, closed_date, ol
 1451	2013-09-16 16:15:27.408	nationalmuseum	\N	\N	\N	Nationalmuseum	sv	\N	\N	\N	http://www.nationalmuseum.se/	\N	50	f	t	t	f	202100-1108
 1452	2013-09-16 16:15:27.408	test	\N	\N	\N	Organisation som saknar alternativt namn	sv	\N	\N	\N	http://org.utan.alternativ/	\N	50	f	t	t	f	202100-2306
 1453	2013-09-16 16:15:27.408	test	\N	\N	\N	Organisation för fitnesse test	sv	\N	\N	\N	http://asdf/	\N	50	f	t	t	f	202100-2128
+1454	2020-09-16 16:15:27.408	uu	\N	\N	\N	Vetenskapsområdet för humaniora och samhällsvetenskap	sv	\N	\N	\N	http://something.se/	\N	50	f	t	t	f	\N
+1455	2020-09-16 16:15:27.408	uu	\N	\N	\N	Teologiska fakulteten	sv	\N	\N	\N	http://somethingelse.se/	\N	50	f	t	t	f	\N
+1756	2015-03-12 10:48:53.898	uu	\N	\N	\N	Gamla Uppsala universitet	sv	lib-uu	\N	\N	http://uu.se	\N	50	f	t	t	f	202100-2935
 \.
 
 
