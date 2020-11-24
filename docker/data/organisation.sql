@@ -294,8 +294,6 @@ COPY public.organisation_name (organisation_name_id, last_updated, locale, organ
 6501	2013-09-16 16:15:27.408	en	Nationalmuseum	1451
 6650	2014-06-16 15:40:06.181	en	School of Tests	1500
 6651	2014-06-16 15:40:46.427	en	Department of Test	1501
-6900	2015-03-12 10:48:53.9	en	Uppsala University	1750
-6901	2020-10-05 10:48:53.9	en	Royal Institute of Technology	1751
 7100	2015-04-29 14:27:00.845	en	Disciplinary Domain of Science and Technology	1900
 7101	2015-04-29 14:31:06.551	en	Technology	1901
 8000	2016-07-19 16:37:09.32	en	Glafo Glasforskningsinstitutet	2000
@@ -306,9 +304,16 @@ COPY public.organisation_name (organisation_name_id, last_updated, locale, organ
 8101	2017-03-03 10:55:26.813	en	Faculty of Health Sciences	2101
 8102	2017-03-03 10:57:07.55	en	Division of Drug Research	2102
 8150	2017-03-21 09:38:33.943	en	FMV	2150
-8151	2017-03-03 10:57:07.55	en	Root Uppsala university	1748
 8152	2017-03-21 09:38:33.943	en	Root KTH	1749
 8153	2017-03-21 09:38:33.943	en	En fitnesse test organiation	1453
+8151	2020-11-24 10:30:21.094	en	Root Uppsala university	1748
+6901	2020-11-24 10:30:21.961	en	Royal Institute of Technology	1751
+6900	2020-11-24 10:30:22.468	en	Uppsala University	1750
+1000	2020-11-24 10:30:22	en	Vetenskapsområdet för humaniora och samhällsvetenskap	1454
+1001	2020-11-24 10:30:22	en	Teologiska fakulteten	1455
+1002	2020-11-24 10:30:22	en	Gamla Uppsala universitet	1756
+1003	2020-11-24 10:30:22	en	Gamla KTH	1757
+1004	2020-11-24 10:30:22	en	Organisation som saknar alternativt namn	1452
 \.
 --
 -- Data for Name: organisation_parent; Type: TABLE DATA; Schema: public; Owner: diva
