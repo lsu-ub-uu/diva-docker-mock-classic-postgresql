@@ -22,7 +22,7 @@ as select CAST(organisation_id as varchar), organisation_parent_id
 from organisation_parent;
 
 
-CREATE OR REPLACE VIEW public.commonorganisationview 
+CREATE OR REPLACE VIEW public.suborganisationview 
 as select o.organisation_id as id, o.domain, o.organisation_name as defaultname, 
 o.organisation_name_locale, o.closed_date, o.organisation_code, o.orgnumber, o.organisation_homepage, 
 o.not_eligible, o.show_in_portal, o.show_in_defence, o.top_level, 
@@ -32,7 +32,20 @@ a.address_id, a.city, a.street, a.postbox, a.postnumber, a.country_code
 from public.organisation o 
 left join organisation_type ot on o.organisation_type_id = ot.organisation_type_id 
 left join organisation_name alt on o.organisation_id = alt.organisation_id 
-left join organisation_address a on o.address_id = a.address_id where o.organisation_type_id <> 49; 
+left join organisation_address a on o.address_id = a.address_id where o.organisation_type_id <> 49 and not top_level; 
+
+CREATE OR REPLACE VIEW public.toporganisationview 
+as select o.organisation_id as id, o.domain, o.organisation_name as defaultname, 
+o.organisation_name_locale, o.closed_date, o.organisation_code, o.orgnumber, o.organisation_homepage, 
+o.not_eligible, o.show_in_portal, o.show_in_defence, o.top_level, 
+ot.organisation_type_code as type_code, alt.organisation_name_id, 
+coalesce(alt.organisation_name,'') as alternative_name,
+a.address_id, a.city, a.street, a.postbox, a.postnumber, a.country_code 
+from public.organisation o 
+left join organisation_type ot on o.organisation_type_id = ot.organisation_type_id 
+left join organisation_name alt on o.organisation_id = alt.organisation_id 
+left join organisation_address a on o.address_id = a.address_id where o.organisation_type_id <> 49 and top_level; 
+
 
 CREATE OR REPLACE VIEW public.rootorganisationview 
 as select o.organisation_id as id, o.domain, o.organisation_name as defaultname, 
