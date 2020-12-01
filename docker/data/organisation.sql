@@ -316,8 +316,7 @@ COPY public.organisation_name (organisation_name_id, last_updated, locale, organ
 1002	2020-11-24 10:30:22	en	Gamla Uppsala universitet	1756
 1003	2020-11-24 10:30:22	en	Gamla KTH	1757
 1004	2020-11-24 10:30:22	en	Organisation som saknar alternativt namn	1452
-1005	2020-11-24 10:30:22	en	Teology institution	1455
-1006	2020-11-24 10:30:22	en	Philosofi and historia	1456
+1005	2020-11-24 10:30:22	en	Philosofi and historia	1456
 \.
 --
 -- Data for Name: organisation_parent; Type: TABLE DATA; Schema: public; Owner: diva
