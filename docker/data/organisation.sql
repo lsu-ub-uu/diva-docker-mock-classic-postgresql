@@ -222,7 +222,7 @@ COPY public.organisation (organisation_id, last_updated, domain, closed_date, ol
 1748	2020-11-24 11:01:18.865	uu	\N	\N	\N	Root Uppsala universitet	sv	\N	\N	\N	http://root.uu.se	\N	49	f	f	f	f	\N
 1454	2020-09-16 16:15:27.408	uu	\N	\N	\N	Vetenskapsområdet för humaniora och samhällsvetenskap	sv	\N	\N	\N	http://something.se/	\N	50	f	f	f	f	\N
 1455	2020-09-16 16:15:27.408	uu	\N	\N	\N	Teologiska fakulteten	sv	\N	\N	\N	http://somethingelse.se/	\N	50	f	f	f	f	\N
-1751	2020-11-24 11:01:19.698	kth	\N	\N	\N	Kungliga Tekniska Högskolan	sv	\N	\N	\N	http://kth.se	\N	50	f	f	f	f	\N
+1751	2020-11-24 11:01:19.698	kth	\N	\N	\N	Kungliga Tekniska Högskolan	sv	\N	\N	\N	http://kth.se	\N	50	f	f	f	t	\N
 1757	2020-03-12 10:48:53.898	kth	\N	\N	\N	Gamla KTH	sv	\N	\N	\N	http://gamla.kth.se/sv	\N	50	t	t	f	t	202100-2439
 1400	2013-03-06 11:34:19.71	nrm	\N	\N	\N	NRM	sv	\N	\N	\N	http://www.nrm.se	\N	50	f	t	t	t	202100-1124
 2150	2017-03-21 09:38:33.94	fmv	\N	\N	\N	FMV	sv	\N	\N	\N	http://	\N	66	t	t	f	t	202100-0340
