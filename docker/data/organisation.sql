@@ -201,10 +201,6 @@ COPY public.organisation (organisation_id, last_updated, domain, closed_date, ol
 1501	2014-06-16 15:40:46.427	test	\N	\N	\N	Testinstitution	sv	\N	\N	\N	\N	\N	54	f	f	f	f	\N
 1500	2014-06-16 15:40:58.443	test	\N	\N	\N	Skolan för Testning	sv	\N	\N	\N	\N	\N	52	f	f	f	f	\N
 1100	2014-06-23 14:37:46.059	test	\N	\N	\N	Testfakultet	sv	\N	\N	\N	\N	\N	52	f	f	f	f	\N
-1748	2015-03-12 10:48:53.898	uu	\N	\N	\N	Root Uppsala universitet	sv	lib-rootuu	\N	\N	http://root.uu.se	\N	49	f	t	t	f	\N
-1749	2015-03-12 10:48:53.898	kth	\N	\N	\N	Root Kungliga tekniska högskolan	sv	lib-rootkth	\N	\N	http://root.kth.se	\N	49	f	t	t	f	\N
-1750	2015-03-12 10:48:53.898	uu	\N	\N	\N	Uppsala universitet	sv	lib-uu	\N	\N	http://uu.se	\N	50	f	t	t	f	202100-2935
-1751	2020-10-05 10:48:53.898	kth	\N	\N	\N	Kungliga Tekniska Högskolan	sv	lib-kth	\N	\N	http://kth.se	\N	50	f	t	t	f	\N
 50	2015-04-29 13:33:25.414	test	\N	\N	\N	Uppsala institution	sv	\N	\N	133	\N	50	54	f	f	f	f	\N
 1900	2015-04-29 14:27:00.838	test	\N	\N	\N	Teknisk-naturvetenskapliga vetenskapsområdet	sv	\N	\N	133	\N	\N	57	f	f	f	f	\N
 1901	2015-04-29 14:31:06.551	test	\N	\N	\N	Tekniska sektionen	sv	\N	\N	\N	\N	\N	56	f	f	f	f	\N
@@ -215,18 +211,22 @@ COPY public.organisation (organisation_id, last_updated, domain, closed_date, ol
 2100	2017-03-03 10:54:55.19	test	\N	\N	\N	Linköping universitet	sv	\N	\N	\N	\N	\N	50	f	f	f	f	\N
 2102	2017-03-03 10:57:07.55	test	\N	\N	\N	Division of Drug Research	sv	\N	\N	\N	\N	\N	54	f	f	f	f	\N
 2101	2017-03-03 10:57:22.008	test	\N	\N	\N	Faculty of Health Sciences	sv	\N	\N	\N	\N	\N	52	f	f	f	f	\N
-2150	2017-03-21 09:38:33.94	fmv	\N	\N	\N	FMV	sv	\N	\N	\N	http://	\N	66	f	t	t	t	\N
-1	2009-03-18 00:00:00	test	\N	\N	\N	Uppsala universitet	sv	\N	\N	\N	\N	\N	50	t	t	t	f	202100-2932
-1350	2013-03-04 14:41:43.811	vti	\N	\N	\N	VTI	sv	\N	\N	\N	http://vti.se	\N	50	f	t	t	f	202100-0704
-1400	2013-03-06 11:34:19.71	nrm	\N	\N	\N	NRM	sv	\N	\N	\N	http://www.nrm.se	\N	50	f	t	t	f	202100-1124
-1450	2013-09-16 16:13:46.552	norden	\N	\N	\N	Nordiska ministerrådet	sv	\N	\N	\N	http://www.norden.org	\N	50	f	t	t	f	43041916
-1451	2013-09-16 16:15:27.408	nationalmuseum	\N	\N	\N	Nationalmuseum	sv	\N	\N	\N	http://www.nationalmuseum.se/	\N	50	f	t	t	f	202100-1108
-1452	2013-09-16 16:15:27.408	test	\N	\N	\N	Organisation som saknar alternativt namn	sv	\N	\N	\N	http://org.utan.alternativ/	\N	50	f	t	t	f	202100-2306
-1453	2013-09-16 16:15:27.408	test	\N	\N	\N	Organisation för fitnesse test	sv	\N	\N	\N	http://asdf/	\N	50	f	t	t	f	202100-2128
-1454	2020-09-16 16:15:27.408	uu	\N	\N	\N	Vetenskapsområdet för humaniora och samhällsvetenskap	sv	\N	\N	\N	http://something.se/	\N	50	f	t	t	f	\N
-1455	2020-09-16 16:15:27.408	uu	\N	\N	\N	Teologiska fakulteten	sv	\N	\N	\N	http://somethingelse.se/	\N	50	f	t	t	f	\N
-1756	2015-03-12 10:48:53.898	uu	\N	\N	\N	Gamla Uppsala universitet	sv	\N	\N	\N	http://uu.se	\N	50	f	t	t	f	202100-2935
-1757	2020-03-12 10:48:53.898	kth	\N	\N	\N	Gamla KTH	sv	\N	\N	\N	http://gamla.kth.se/sv	\N	50	f	t	t	f	202100-2439
+1	2009-03-18 00:00:00	test	\N	\N	\N	Uppsala universitet	sv	\N	\N	\N	\N	\N	50	t	t	t	t	202100-2932
+1451	2013-09-16 16:15:27.408	nationalmuseum	\N	\N	\N	Nationalmuseum	sv	\N	\N	\N	http://www.nationalmuseum.se/	\N	50	f	t	t	t	202100-1108
+1452	2013-09-16 16:15:27.408	test	\N	\N	\N	Organisation som saknar alternativt namn	sv	\N	\N	\N	http://org.utan.alternativ/	\N	50	f	t	t	t	202100-2306
+1750	2020-11-24 11:01:20.218	uu	\N	\N	\N	Uppsala universitet	sv	\N	\N	\N	http://uu.se	\N	50	f	t	t	t	202100-2935
+1350	2013-03-04 14:41:43.811	vti	\N	\N	\N	VTI	sv	\N	\N	\N	http://vti.se	\N	50	f	t	f	t	202100-0704
+1450	2013-09-16 16:13:46.552	norden	\N	\N	\N	Nordiska ministerrådet	sv	\N	\N	\N	http://www.norden.org	\N	50	f	t	f	t	43041916
+1453	2013-09-16 16:15:27.408	test	\N	\N	\N	Organisation för fitnesse test	sv	\N	\N	\N	http://asdf/	\N	50	f	t	f	t	202100-2128
+1749	2015-03-12 10:48:53.898	kth	\N	\N	\N	Root Kungliga tekniska högskolan	sv	\N	\N	\N	http://root.kth.se	\N	49	f	f	f	f	\N
+1748	2020-11-24 11:01:18.865	uu	\N	\N	\N	Root Uppsala universitet	sv	\N	\N	\N	http://root.uu.se	\N	49	f	f	f	f	\N
+1454	2020-09-16 16:15:27.408	uu	\N	\N	\N	Vetenskapsområdet för humaniora och samhällsvetenskap	sv	\N	\N	\N	http://something.se/	\N	50	f	f	f	f	\N
+1455	2020-09-16 16:15:27.408	uu	\N	\N	\N	Teologiska fakulteten	sv	\N	\N	\N	http://somethingelse.se/	\N	50	f	f	f	f	\N
+1751	2020-11-24 11:01:19.698	kth	\N	\N	\N	Kungliga Tekniska Högskolan	sv	\N	\N	\N	http://kth.se	\N	50	f	f	f	t	\N
+1757	2020-03-12 10:48:53.898	kth	\N	\N	\N	Gamla KTH	sv	\N	\N	\N	http://gamla.kth.se/sv	\N	50	t	t	f	t	202100-2439
+1400	2013-03-06 11:34:19.71	nrm	\N	\N	\N	NRM	sv	\N	\N	\N	http://www.nrm.se	\N	50	f	t	t	t	202100-1124
+2150	2017-03-21 09:38:33.94	fmv	\N	\N	\N	FMV	sv	\N	\N	\N	http://	\N	66	t	t	f	t	202100-0340
+1756	2015-03-12 10:48:53.898	uu	\N	\N	\N	Gamla Uppsala universitet	sv	\N	\N	\N	http://uu.se	\N	50	f	t	t	t	202100-2935
 \.
 
 
@@ -294,8 +294,6 @@ COPY public.organisation_name (organisation_name_id, last_updated, locale, organ
 6501	2013-09-16 16:15:27.408	en	Nationalmuseum	1451
 6650	2014-06-16 15:40:06.181	en	School of Tests	1500
 6651	2014-06-16 15:40:46.427	en	Department of Test	1501
-6900	2015-03-12 10:48:53.9	en	Uppsala University	1750
-6901	2020-10-05 10:48:53.9	en	Royal Institute of Technology	1751
 7100	2015-04-29 14:27:00.845	en	Disciplinary Domain of Science and Technology	1900
 7101	2015-04-29 14:31:06.551	en	Technology	1901
 8000	2016-07-19 16:37:09.32	en	Glafo Glasforskningsinstitutet	2000
@@ -306,9 +304,16 @@ COPY public.organisation_name (organisation_name_id, last_updated, locale, organ
 8101	2017-03-03 10:55:26.813	en	Faculty of Health Sciences	2101
 8102	2017-03-03 10:57:07.55	en	Division of Drug Research	2102
 8150	2017-03-21 09:38:33.943	en	FMV	2150
-8151	2017-03-03 10:57:07.55	en	Root Uppsala university	1748
 8152	2017-03-21 09:38:33.943	en	Root KTH	1749
 8153	2017-03-21 09:38:33.943	en	En fitnesse test organiation	1453
+8151	2020-11-24 10:30:21.094	en	Root Uppsala university	1748
+6901	2020-11-24 10:30:21.961	en	Royal Institute of Technology	1751
+6900	2020-11-24 10:30:22.468	en	Uppsala University	1750
+1000	2020-11-24 10:30:22	en	Vetenskapsområdet för humaniora och samhällsvetenskap	1454
+1001	2020-11-24 10:30:22	en	Teologiska fakulteten	1455
+1002	2020-11-24 10:30:22	en	Gamla Uppsala universitet	1756
+1003	2020-11-24 10:30:22	en	Gamla KTH	1757
+1004	2020-11-24 10:30:22	en	Organisation som saknar alternativt namn	1452
 \.
 --
 -- Data for Name: organisation_parent; Type: TABLE DATA; Schema: public; Owner: diva
