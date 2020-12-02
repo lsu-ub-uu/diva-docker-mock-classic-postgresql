@@ -17,10 +17,15 @@ from organisation_predecessor op
 left join organisation_predecessor_description opd on op.organisation_id = opd.organisation_id 
 AND op.organisation_predecessor_id = opd.predecessor_id;
 
-CREATE OR REPLACE VIEW public.divaOrganisationParent 
-as select CAST(organisation_id as varchar), organisation_parent_id 
-from organisation_parent;
-
+CREATE OR REPLACE view public.divaOrganisationParent 
+as
+select op.organisation_id, op.organisation_parent_id,
+CASE
+    WHEN organisation_type_id = 49 THEN 'rootOrganisation'
+    WHEN top_level THEN 'topOrganisation'
+    ELSE 'subOrganisation'
+END AS coraOrganisationType
+from organisation_parent op left join organisation o on op.organisation_parent_id = o.organisation_id;
 
 CREATE OR REPLACE VIEW public.suborganisationview 
 as select o.organisation_id as id, o.domain, o.organisation_name as defaultname, 
