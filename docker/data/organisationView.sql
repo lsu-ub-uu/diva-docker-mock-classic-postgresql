@@ -11,11 +11,19 @@ left join organisation_name alt on o.organisation_id = alt.organisation_id
 left join organisation_address a on o.address_id = a.address_id; 
 
 CREATE OR REPLACE VIEW public.divaOrganisationPredecessor 
-as select op.organisation_id, op.organisation_predecessor_id, opd.organisation_predecessor_id 
-as predecessorDescriptionId, opd.description 
+as 
+select op.organisation_id, op.organisation_predecessor_id, opd.organisation_predecessor_id 
+as predecessorDescriptionId, opd.description,
+CASE
+    WHEN o.organisation_type_id = 49 THEN 'rootOrganisation'
+    WHEN o.top_level THEN 'topOrganisation'
+    ELSE 'subOrganisation'
+END AS coraOrganisationType
 from organisation_predecessor op 
 left join organisation_predecessor_description opd on op.organisation_id = opd.organisation_id 
-AND op.organisation_predecessor_id = opd.predecessor_id;
+AND op.organisation_predecessor_id = opd.predecessor_id 
+left join organisation o on op.organisation_predecessor_id = o.organisation_id;
+
 
 CREATE OR REPLACE view public.divaOrganisationParent 
 as
