@@ -229,7 +229,7 @@ COPY public.organisation (organisation_id, last_updated, domain, closed_date, ol
 1400	2013-03-06 11:34:19.71	nrm	\N	\N	\N	NRM	sv	\N	\N	\N	http://www.nrm.se	\N	50	f	t	t	t	202100-1124
 2150	2017-03-21 09:38:33.94	fmv	\N	\N	\N	FMV	sv	\N	\N	\N	http://	\N	66	t	t	f	t	202100-0340
 1756	2015-03-12 10:48:53.898	uu	\N	\N	\N	Gamla Uppsala universitet	sv	\N	\N	\N	http://uu.se	\N	50	f	t	t	t	202100-2935
-1453	2020-09-16 16:15:27.408	uu	\N	\N	\N	Vetenskap institution	sv	\N	\N	\N	http://something.se/	\N	50	f	f	f	f	\N
+1458	2020-09-16 16:15:27.408	uu	\N	\N	\N	Vetenskap institution	sv	\N	\N	\N	http://something.se/	\N	50	f	f	f	f	\N
 \.
 
 
@@ -318,7 +318,7 @@ COPY public.organisation_name (organisation_name_id, last_updated, locale, organ
 1003	2020-11-24 10:30:22	en	Gamla KTH	1757
 1004	2020-11-24 10:30:22	en	Organisation som saknar alternativt namn	1452
 1005	2020-11-24 10:30:22	en	Philosofi and historia	1456
-1006	2020-11-24 10:30:22	en	Knowledge institution	1453
+1006	2020-11-24 10:30:22	en	Knowledge institution	1458
 \.
 --
 -- Data for Name: organisation_parent; Type: TABLE DATA; Schema: public; Owner: diva
