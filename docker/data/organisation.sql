@@ -214,7 +214,7 @@ COPY public.organisation (organisation_id, last_updated, domain, closed_date, ol
 1	2009-03-18 00:00:00	test	\N	\N	\N	Uppsala universitet	sv	\N	\N	\N	\N	\N	50	t	t	t	t	202100-2932
 1451	2013-09-16 16:15:27.408	nationalmuseum	\N	\N	\N	Nationalmuseum	sv	\N	\N	\N	http://www.nationalmuseum.se/	\N	50	f	t	t	t	202100-1108
 1452	2013-09-16 16:15:27.408	test	\N	\N	\N	Organisation som saknar alternativt namn	sv	\N	\N	\N	http://org.utan.alternativ/	\N	50	f	t	t	t	202100-2306
-1750	2020-11-24 11:01:20.218	uu	\N	\N	\N	Uppsala universitet	sv	\N	\N	\N	http://uu.se	\N	50	f	t	t	t	202100-2935
+1750	2020-11-24 11:01:20.218	uu	\N	\N	\N	Uppsala universitet	sv	\N	\N	\N	http://uu.se	\N	50	f	t	t	t	202100-1750
 1350	2013-03-04 14:41:43.811	vti	\N	\N	\N	VTI	sv	\N	\N	\N	http://vti.se	\N	50	f	t	f	t	202100-0704
 1450	2013-09-16 16:13:46.552	norden	\N	\N	\N	Nordiska ministerrådet	sv	\N	\N	\N	http://www.norden.org	\N	50	f	t	f	t	43041916
 1453	2013-09-16 16:15:27.408	test	\N	\N	\N	Organisation för fitnesse test	sv	\N	\N	\N	http://asdf/	\N	50	f	t	f	t	202100-2128
@@ -225,10 +225,10 @@ COPY public.organisation (organisation_id, last_updated, domain, closed_date, ol
 1456	2020-09-16 16:15:27.408	kth	\N	\N	\N	Filosofi och historia	sv	\N	\N	\N	http://something.se/	\N	50	f	f	f	f	\N
 1457	2020-09-16 16:15:27.408	kth	\N	\N	\N	Hållbar utveckling, miljövetenskap och teknik	sv	\N	\N	\N	http://somethingelse.se/	\N	50	f	f	f	f	\N
 1751	2020-11-24 11:01:19.698	kth	\N	\N	\N	Kungliga Tekniska Högskolan	sv	\N	\N	\N	http://kth.se	\N	50	f	f	f	t	\N
-1757	2020-03-12 10:48:53.898	kth	\N	\N	\N	Gamla KTH	sv	\N	\N	\N	http://gamla.kth.se/sv	\N	50	t	t	f	t	202100-2439
+1757	2020-03-12 10:48:53.898	kth	\N	\N	\N	Gamla KTH	sv	\N	\N	\N	http://gamla.kth.se/sv	\N	50	t	t	f	t	202100-1757
 1400	2013-03-06 11:34:19.71	nrm	\N	\N	\N	NRM	sv	\N	\N	\N	http://www.nrm.se	\N	50	f	t	t	t	202100-1124
 2150	2017-03-21 09:38:33.94	fmv	\N	\N	\N	FMV	sv	\N	\N	\N	http://	\N	66	t	t	f	t	202100-0340
-1756	2015-03-12 10:48:53.898	uu	\N	\N	\N	Gamla Uppsala universitet	sv	\N	\N	\N	http://uu.se	\N	50	f	t	t	t	202100-2935
+1756	2015-03-12 10:48:53.898	uu	\N	\N	\N	Gamla Uppsala universitet	sv	\N	\N	\N	http://uu.se	\N	50	f	t	t	t	202100-2936
 1458	2020-09-16 16:15:27.408	uu	\N	\N	\N	Vetenskap institution	sv	\N	\N	\N	http://something.se/	\N	50	f	f	f	f	\N
 \.
 
